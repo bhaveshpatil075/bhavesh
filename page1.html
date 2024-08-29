@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Accordion and Tabs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Accordion -->
+        <div id="jsonData" class="accordion">
+            <!-- Data from JSON will be displayed here -->
+        </div>
+    </div>  
+
+    <script>
+        // jQuery for Accordion
+        $(document).ready(function() {
+            $('.accordion-header').click(function() {
+                $(this).next('.accordion-content').slideToggle();
+                $('.accordion-content').not($(this).next()).slideUp();
+            });
+
+            // jQuery for Tabs
+            $('.tab-headers li').click(function() {
+                var index = $(this).index();
+                $('.tab-headers li').removeClass('active');
+                $(this).addClass('active');
+                $('.tab-content').removeClass('active').eq(index).addClass('active');
+            });
+
+            $.getJSON("data.json", function(data) {
+                // for(let i =0; i < data.length; i++){
+
+                //    var output = " <h3 class='accordion-header'>" + data[i].Question + "</h3>"
+                //    output += "<div class='accordion-content'>"  
+                //         output += "<p>'>" + data[i].Answer + "</p></div>"
+                
+                var output = "<p>Name: " + data.name + "</p>";
+                output += "<p>Age: " + data.age + "</p>";
+                output += "<p>City: " + data.city + "</p>";
+
+                     $("#jsonData").append(output);
+                // }
+              
+                $("#jsonData").html(output);
+            }).fail(function(){
+                $("#jsonData").html("<p>Error loading JSON data</p>");
+            });
+
+
+        });
+
+        
+    </script>
+</body>
+</html>

@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 90%;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
@@ -21,16 +21,17 @@ h2 {
 .accordion-header {
     cursor: pointer;
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
-    border: 1px solid #007bff;
+    border: 1px solid #ffffff;
 }
 
 .accordion-content {
     display: none;
     padding: 10px;
-    border: 1px solid #007bff;
+    border: 1px solid #ffffff;
+    color: #000000;
     border-top: none;
 }
 

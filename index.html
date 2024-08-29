@@ -10,40 +10,37 @@
 <body>
     <div class="container">
         <!-- Accordion -->
-        <h2>Accordion</h2>
-        <div class="accordion">
-            <h3 class="accordion-header">Section 1</h3>
-            <div class="accordion-content">
-                <p>Content for Section 1.</p>
-            </div>
-
-            <h3 class="accordion-header">Section 2</h3>
-            <div class="accordion-content">
-                <p>Content for Section 2.</p>
-            </div>
-
-            <h3 class="accordion-header">Section 3</h3>
-            <div class="accordion-content">
-                <p>Content for Section 3.</p>
-            </div>
-        </div>
-
+       
         <!-- Tabs -->
         <h2>Tabs</h2>
         <div class="tabs">
             <ul class="tab-headers">
-                <li class="active">Tab 1</li>
-                <li>Tab 2</li>
-                <li>Tab 3</li>
+                <li class="active">C#</li>
+                <li>SQL</li>
+                <li>Angular</li>
             </ul>
             <div class="tab-content active">
-                <p>Content for Tab 1.</p>
+                <h2>Accordion</h2>
+                <div class="accordion">
+                  
+        
+                    <h3 class="accordion-header">Section 2</h3>
+                    <div class="accordion-content">
+                        <p>SQL</p>
+                    </div>
+        
+                    <h3 class="accordion-header">Section 3</h3>
+                    <div class="accordion-content">
+                        <p>Angular</p>
+                    </div>
+                </div>
+        
             </div>
             <div class="tab-content">
-                <p>Content for Tab 2.</p>
+                <iframe src="page1.html" frameborder="0"></iframe>
             </div>
             <div class="tab-content">
-                <p>Content for Tab 3.</p>
+                <iframe src="page2.html" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -63,7 +60,13 @@
                 $(this).addClass('active');
                 $('.tab-content').removeClass('active').eq(index).addClass('active');
             });
+
+         
+
         });
+
+      
+
     </script>
 </body>
 </html>
