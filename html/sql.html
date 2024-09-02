@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Accordion -->
+        <div id="jsonData" class="accordion">
+            <!-- Data from JSON will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        // jQuery for Accordion
+        $(document).ready(function () {
+
+            $.ajax({
+                url: "../json/sql.json",
+                dataType: "json",
+                success: function (data) {
+                    var resultData = data['data'];
+                    for (let i = 0; i < resultData.length; i++) {
+
+                        var output = " <h3 class='accordion-header'>"+ resultData[i].srNo + ". " + resultData[i].Question + "</h3>"
+                        output += "<div class='accordion-content'>"
+                        output += "<p>" + resultData[i].Answer + "</p></div>"
+
+                        $("#jsonData").append(output);
+
+                
+                    }
+
+                    $('.accordion-header').click(function () {
+                            $(this).next('.accordion-content').slideToggle();
+                            $('.accordion-content').not($(this).next()).slideUp();
+                        });
+
+                        // jQuery for Tabs
+                        $('.tab-headers li').click(function () {
+                            var index = $(this).index();
+                            $('.tab-headers li').removeClass('active');
+                            $(this).addClass('active');
+                            $('.tab-content').removeClass('active').eq(index).addClass('active');
+                        });
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.error("Error loading JSON: ", textStatus, errorThrown);
+                }
+            });
+
+
+
+
+        });
+
+
+    </script>
+</body>
+
+</html>

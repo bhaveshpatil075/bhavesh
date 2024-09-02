@@ -1,0 +1,16 @@
+{
+    "data":[ {
+        "srNo": "1",
+        "Question": "Interface vs Abstract Class",
+        "Answer":"Can inherit another interface but not classes <br/> Abstract can have fields, Interface cannot <br/> Abstract member can have access modifier, but Interface cannot"
+    },{
+        "srNo": "2",
+        "Question": "John Doe",
+        "Answer":""
+    },
+    {
+        "srNo": "3",
+        "Question": "John Doe",
+        "Answer":""
+    }]
+}

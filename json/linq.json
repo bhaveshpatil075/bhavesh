@@ -1,0 +1,16 @@
+{
+    "data":[ {
+        "srNo": "1",
+        "Question": "Lamnda Inner Join",
+        "Answer": "<img src='../images\/linq\/lambdaInnerJoin.png'>"
+    },{
+        "srNo": "2",
+        "Question": "John Doe",
+        "Answer":""
+    },
+    {
+        "srNo": "3",
+        "Question": "John Doe",
+        "Answer":""
+    }]
+}
