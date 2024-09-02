@@ -1,8 +1,8 @@
 {
     "data":[ {
         "srNo": "1",
-        "Question": "Lamnda Inner Join",
-        "Answer": "<img src='../images\/linq\/lambdaInnerJoin.png'>"
+        "Question": "Lamda Inner Join",
+        "Answer": "<img src='https://github.com/bhaveshpatil075/bhavesh/blob/main/images/linq/lambdaInnerJoin.png'>"
     },{
         "srNo": "2",
         "Question": "John Doe",
