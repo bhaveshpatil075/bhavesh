@@ -2,7 +2,7 @@
     "data":[ {
         "srNo": "1",
         "Question": "Lamda Inner Join",
-        "Answer": "<img src='/images/linq/lambdaInnerJoin.PNG'>"
+        "Answer": "<img src='../images/linq/lambdaInnerJoin.PNG'>"
     },{
         "srNo": "2",
         "Question": "John Doe",
