@@ -1,16 +1,42 @@
 {
     "data":[ {
         "srNo": "1",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "Angular.json",
+        "Answer":"The angular.json file in Angular is a crucial configuration file for Angular CLI projects. It defines how your Angular project is structured and how it should be built, served, and tested."
     },{
         "srNo": "2",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "What is RxJS, and how is it used in Angular?",
+        "Answer": "<ol><li>RxJS (Reactive Extensions for JavaScript) is a library for reactive programming with observables.</li><li>In Angular, RxJS is primarily used for handling asynchronous operations, such as HTTP requests. It uses observables for data streams.</li><li>Example usage with HttpClient: <img src='../images/angular/rxjs.PNG'></li></ol>"
     },
     {
         "srNo": "3",
-        "Question": "John Doe",
+        "Question": "What are the lifecycle hooks in Angular?",
+        "Answer":"Angular provides several lifecycle hooks that allow you to control the behavior of components:<ul><li>ngOnInit(): Called after the component is initialized.</li><li>ngOnChanges(): Called when any data-bound property changes.</li><li>ngOnDestroy(): Called just before the component is destroyed.</li><li>ngAfterViewInit(): Called after the component's view (and child views) are fully initialized.</li></ul> <br/> <img src='../images/angular/life-cycle.PNG'></li></ol>"
+    },
+    {
+        "srNo": "4",
+        "Question": "How Lazy Loading Works in Angular",
+        "Answer":"In Angular, lazy loading is typically implemented using the Angular Router. Instead of loading all feature modules at once, lazy loading ensures that certain parts of the application are only loaded when the user navigates to the route associated with them. <br/> Here’s how lazy loading works step by step: <ul><li>Initial Load: Only the necessary modules, like the root module (usually AppModule), are loaded when the application starts. Other feature modules are not loaded until the user navigates to a route that depends on them.</li>    <li>Routing to Lazy-Loaded Modules: When a user navigates to a route that requires a lazy-loaded module, Angular will fetch the corresponding module asynchronously and load it. The module is only requested and loaded when needed, which prevents the entire application from being loaded upfront</li></ul><img src='../images/angular/lazy-loading.PNG'></li>"
+    },
+    {
+        "srNo": "5",
+        "Question": "What is a resolver in Angular, and why is it used?",
+        "Answer":"A resolver is essentially a service that implements the Resolve<T> interface. The resolver service is attached to a route definition. When Angular’s router attempts to activate a route, it first executes the resolver, which can fetch or compute the required data. The route is only activated after the data is successfully fetched or computed.Why Use a Resolver? <ol><li>Ensure Data is Ready Before the Component Loads</li><li>Avoid Manual Data Fetching in Components</li><li>Simplified Error Handling</li><li>Centralized Data Loading</li></ol> <img src='../images/angular/resolver.PNG'>"
+    },
+    {
+        "srNo": "6",
+        "Question": "",
         "Answer":""
-    }]
+    },
+    {
+        "srNo": "7",
+        "Question": "",
+        "Answer":""
+    },
+    {
+        "srNo": "8",
+        "Question": "",
+        "Answer":""
+    }
+]
 }

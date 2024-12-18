@@ -5,12 +5,42 @@
         "Answer":"Can inherit another interface but not classes <br/> Abstract can have fields, Interface cannot <br/> Abstract member can have access modifier, but Interface cannot"
     },{
         "srNo": "2",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "What is the difference between ref, out, and in parameters? When would you use each?",
+        "Answer":"<ol><li>ref Keyword: Passes a variable by reference, allowing the method to read and modify its value.</li>        <li>out Keyword: Passes a variable by reference, but it is used specifically for output purposes.</li><li>in: Purpose: Passes a variable by reference as read-only.</li><ol><br/> <img src='../images/csharp/2.PNG'>"
     },
     {
         "srNo": "3",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "What are tuples, and how are they different from anonymous types?",
+        "Answer":"1. Tuples <br/><br/> A tuple is a lightweight data structure that can hold a fixed number of elements of various types. <img src='../images/csharp/3.1.PNG'> <br/><br/> 2. Anonymous Types <br/>  An anonymous type is a class type created on the fly without a formal class definition. <br/><br/> <img src='../images/csharp/3.2.PNG'> <br/><br/> <img src='../images/csharp/3.3.PNG'> "
+    },
+    {
+        "srNo": "4",
+        "Question": "Explain the differences between async/await and traditional threading in C#",
+        "Answer":"<b>Async/Await:</b> it simplifies writing asynchronous code using the async and await keywords. It is primarily used for I/O-bound operations where the program waits for external resources (e.g., network, file, or database operations). <br/> Execution: When a method marked with async encounters the await keyword, it pauses execution until the awaited task completes. Meanwhile, the thread is released back to the thread pool to perform other work. <br/> Thread Reuse: async/await does not block a thread. It allows the program to use the same thread efficiently for other tasks. <br/><br/><b>Traditional Threading:</b><br/> Uses classes like Thread, Task, and ThreadPool to perform CPU-bound operations or to explicitly manage multiple threads. Threads run independently and are managed directly by the programmer. <br/> Execution: Threads run independently and are explicitly managed. Each thread blocks a system resource until its task completes. <br/> Thread Blocking: Threads are blocked if they are waiting for an operation to complete.<br/> <img src='../images/csharp/4.1.PNG'><br/> <img src='../images/csharp/4.2.PNG'><br/> <img src='../images/csharp/4.3.PNG'><br/> <img src='../images/csharp/4.4.PNG'>"
+    },
+    {
+        "srNo": "5",
+        "Question": "What are extension methods? Can they override existing methods in a class?",
+        "Answer": "An extension method is a static method in a static class. The first parameter of the method specifies the type it is extending, and it is prefixed with the this keyword. <br/><br/> Extension methods are called as if they were instance methods of the type being extended, enhancing readability and usability. <br/> <img src='../images/csharp/5.1.PNG'><br/><br/> <img src='../images/csharp/5.2.PNG'/> "
+    },
+    {
+        "srNo": "6",
+        "Question": "What is the difference between readonly and const in C#?",
+        "Answer": "<img src='../images/csharp/6.1.PNG'><br/><br/> <img src='../images/csharp/6.2.PNG'/>"
+    },
+    {
+        "srNo": "7",
+        "Question": "Explain covariance and contravariance. How are IEnumerable<T> and IComparer<T> examples of these?",
+        "Answer": ""
+    },
+    {
+        "srNo": "8",
+        "Question": "What is the difference between dynamic and var? Provide use cases for both.",
+        "Answer": "<br/><img src='../images/csharp/8.1.PNG'>"
+    },
+    {
+        "srNo": "9",
+        "Question": "How does the lock statement work? How does it compare to other thread synchronization techniques like Mutex and Monitor?",
+        "Answer": "The lock statement is a shorthand for working with the Monitor class in C#. It ensures that only one thread can enter a critical section of code at a time. <img src='../images/csharp/'>"
     }]
 }
