@@ -1,16 +1,16 @@
 {
     "data":[ {
         "srNo": "1",
-        "Question": "Interface vs Abstract Class",
-        "Answer":"Can inherit another interface but not classes <br/> Abstract can have fields, Interface cannot <br/> Abstract member can have access modifier, but Interface cannot"
+        "Question": "What is a CTE (Common Table Expression), and how is it different from a subquery?",
+        "Answer":"A CTE is a temporary result set that can be referred to within the main query. It improves readability and reusability. <br/><br/> <img src='../images/sql/1.1.PNG'>"
     },{
         "srNo": "2",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "Explain the difference between ROW_NUMBER(), RANK(), and DENSE_RANK()",
+        "Answer":"<br/><img src='../images/sql/2.1.PNG'><br/><br/><img src='../images/sql/2.2.PNG'>"
     },
     {
         "srNo": "3",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "What are window functions, and how are they used?",
+        "Answer":"<br/><img src='../images/sql/3.1.PNG'>"
     }]
 }
