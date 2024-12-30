@@ -1,16 +1,16 @@
 {
     "data":[ {
         "srNo": "1",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "Explain hoisting in JavaScript.",
+        "Answer":"Hoisting is JavaScript's default behavior of moving all declarations (var, let, const, function) to the top of their containing scope during the compile phase. However, only var declarations are initialized with undefined, while let and const are hoisted but not initialized, leading to a Temporal Dead Zone."
     },{
         "srNo": "2",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "Closures",
+        "Answer":"In JavaScript, closures are a powerful concept where a function remembers its lexical scope even when the function is executed outside that scope. In simple terms, a closure occurs when a function retains access to variables from its outer (enclosing) function, even after the outer function has finished execution. <br/><br/> <img src='../images/javascript/2.1.PNG'/> <br/> <br/> <img src='../images/javascript/2.2.PNG'/>"
     },
     {
         "srNo": "3",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "How does the this keyword work in JavaScript?",
+        "Answer":"The this keyword in JavaScript refers to the current context or current execution environment within a function, method, or object. Its value is determined by how a function is called, and not where it is defined. This is one of the unique features of JavaScript, as this can behave differently depending on the context in which a function is invoked. <br/> <br/> <img src='../images/javascript/3.1.PNG'/>"
     }]
 }
