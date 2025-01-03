@@ -42,5 +42,36 @@
         "srNo": "9",
         "Question": "How does the lock statement work? How does it compare to other thread synchronization techniques like Mutex and Monitor?",
         "Answer": "The lock statement is a shorthand for working with the Monitor class in C#. It ensures that only one thread can enter a critical section of code at a time. <img src='../images/csharp/'>"
-    }]
+    },
+    {
+        "srNo": "10",
+        "Question": "Dispose vs Finalize",
+        "Answer": "<img src='../images/csharp/10.1.PNG'> <br/><br/> <img src='../images/csharp/10.2.PNG'>"
+    },
+    {
+        "srNo": "11",
+        "Question": "SOLID principles in OOPS",
+        "Answer": "<ol><li>S - Single Responsibility Principle (SRP)<br/>Definition: A class should have only one reason to change, meaning it should have only one job or responsibility.<br/>Explanation: This makes the class easier to understand and modify without affecting unrelated functionalities.<br/>Example: A class responsible for handling database operations should not also manage user interface logic.<br/></li><li>O - Open/Closed Principle (OCP)<br/>Definition: Software entities (classes, modules, functions) should be open for extension but closed for modification.<br/>Explanation: You can extend the behavior of a class without modifying its source code. This can be achieved through polymorphism or inheritance.<br/>Example: Use interfaces or abstract classes to allow new functionality without changing existing code.<br/></li><li>L - Liskov Substitution Principle (LSP)<br/>Definition: Objects of a superclass should be replaceable with objects of a subclass without altering the correctness of the program.<br/>Explanation Subclasses must honor the contract of their superclass.<br/>Example: If class Animal has a method move(), any subclass (e.g., Bird, Fish) must implement move() appropriately.<br/> </li><li> I - Interface Segregation Principle (ISP) <br/> Definition: A class should not be forced to implement interfaces it does not use. Explanation: Create smaller, more specific interfaces rather than a large general-purpose interface. Example: Instead of a single Worker interface with methods like work() and eat(), divide it into Worker (with work()) and Eater (with eat()). </li><li> D - Dependency Inversion Principle (DIP <br/> Definition: High-level modules should not depend on low-level modules. Both should depend on abstractions. Explanation: Rely on interfaces or abstract classes rather than concrete implementations. Example: A class OrderProcessor should depend on an interface PaymentProcessor, not on a specific implementation like CreditCardProcessor. </li></ol>"
+    },
+    {
+        "srNo": "12",
+        "Question": "Static constructor, when we should use it ?",
+        "Answer": "<img src='../images/csharp/12.1.PNG'><br/><img src='../images/csharp/12.2.PNG'>"
+    },
+    {
+        "srNo": "13",
+        "Question": "Why and when we should use Abstract Class?",
+        "Answer": "An abstract class is a blueprint for other classes, providing a base class with shared functionality while allowing derived classes to implement or override specific behaviors. <br/> <img src='../images/csharp/13.1.PNG'><br/><img src='../images/csharp/13.2.PNG'>"
+    },
+    {
+        "srNo": "14",
+        "Question": "Difference between virtual and abstract method?",
+        "Answer": "Virtual methods and abstract methods in object-oriented programming are both used to enable polymorphism and allow derived classes to override behavior. However, they differ significantly in purpose, usage, and implementation. <br/> <img src='../images/csharp/14.1.PNG'>"
+    },
+    {
+        "srNo": "15",
+        "Question": "Can we have a static virtual method?",
+        "Answer": "No, you cannot have a static virtual method in most object-oriented programming languages like C#. This is because the concepts of static and virtual are inherently contradictory. Here's why: <br/> <img src='../images/csharp/15.1.PNG'>"
+    }
+]
 }
