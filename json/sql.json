@@ -12,5 +12,20 @@
         "srNo": "3",
         "Question": "What are window functions, and how are they used?",
         "Answer":"<br/><img src='../images/sql/3.1.PNG'>"
+    },
+    {
+        "srNo": "4",
+        "Question": "Can we have temp tables in functions ",
+        "Answer": "temporary tables cannot be directly created and used inside user-defined functions. This is because temporary tables (#TempTable) are considered session-scoped objects, and functions are designed to be deterministic and do not support objects with session or transaction-specific states. <br/> Use table variables or inline table-valued functions as alternatives for functions."
+    },
+    {
+        "srNo": "5",
+        "Question": "Sql optimization technique",
+        "Answer": "<ol><li>Indexing: Create indexes on frequently queried columns, especially those used in WHERE, JOIN, GROUP BY, and ORDER BY.</li><li>Avoid SELECT *: Retrieve only the required columns instead of using SELECT *</li><li>Use Appropriate Joins: Use the most efficient type of join (INNER JOIN, LEFT JOIN, etc.) based on your needs.</li><li>Optimize WHERE Clauses: Use specific conditions in WHERE clauses and avoid functions on columns whenever possible.</li><li>Avoid Subqueries When Possible: Replace subqueries with joins or common table expressions (CTEs) where applicable.</li><li>Use LIMIT or TOP for Large Datasets:  Limit the number of rows returned when you don’t need the entire dataset.</li><li>Analyze and Optimize Query Plans: Use tools like EXPLAIN or EXPLAIN PLAN to analyze the execution plan of queries.</li><li>Partition Large Tables: Partition tables based on range, list, or hash values (e.g., by date or region)</li><li>Use Proper Data Types: Example Use TINYINT instead of INT for small numeric ranges.</li><li>Optimize Updates and Deletes: Use batch operations for large UPDATE or DELETE statements.</li><li>Avoid Temporary Tables When Possible: Replace temporary tables with CTEs,  Temporary tables consume memory and can slow down performance</li><ol>"
+    },
+    {
+        "srNo": "6",
+        "Question": "Execution Order of SQL Queries?",
+        "Answer": "<img src='../images/sql/6.1.PNG'>"
     }]
 }

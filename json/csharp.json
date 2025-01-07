@@ -72,6 +72,36 @@
         "srNo": "15",
         "Question": "Can we have a static virtual method?",
         "Answer": "No, you cannot have a static virtual method in most object-oriented programming languages like C#. This is because the concepts of static and virtual are inherently contradictory. Here's why: <br/> <img src='../images/csharp/15.1.PNG'>"
+    },
+    {
+        "srNo": "16",
+        "Question": "Access modifiers ",
+        "Answer": "<ol><li>Public: The member is accessible from anywhere.</li><li>Private: The member is accessible only within the class in which it is defined. This is the default access modifier for class members.</li><li>Protected: The member is accessible within its own class and by derived classes.</li><li>Internal: The member is accessible only within the same assembly. It cannot be accessed from another assembly.</li><li>Protected Internal: The member is accessible to derived classes and within the same assembly.</li> <li> Private Protected: The member is accessible within the class where it is declared and in derived classes, but only if they are in the same assembly.</li><ol> <br/> <img src='../images/csharp/16.1.PNG'>"
+    },
+    {
+        "srNo": "17",
+        "Question": "Diamond Problem",
+        "Answer": "The Diamond Problem is a well-known ambiguity that arises in object-oriented programming languages that support multiple inheritance. It occurs when a class inherits from two classes that both inherit from the same base class, creating a diamond-shaped inheritance structure. <br/> "
+    },
+    {
+        "srNo": "18",
+        "Question": "Delegates",
+        "Answer": "Delegates provide a flexible and powerful way to work with methods dynamically in C#. Whether you're creating callback mechanisms, handling events, or passing methods as arguments, delegates are an essential tool in a C# developer's toolbox. <br/>  <br/> <img src='../images/csharp/18.1.PNG'> <br/><br/> public delegate void MyDelegate(string message); <br/><br/>  Multicast Delegates <br/> <br/> <img src='../images/csharp/18.2.PNG'> <br/> <br/>  Anonymous Methods <br/> <br/> <img src='../images/csharp/18.3.PNG'> <br/> <br/> Lambda Expressions <br/> <br/> <img src='../images/csharp/18.4.PNG'>"
+    },
+    {
+        "srNo": "19",
+        "Question": "Common Delegate Types",
+        "Answer": " <img src='../images/csharp/19.1.PNG'> <br/> <img src='../images/csharp/19.2.PNG'> <br/> <img src='../images/csharp/19.3.PNG'>"
+    },
+    {
+        "srNo": "20",
+        "Question": "Private constructor in c#? why it is used? Can we inherit a class having private method?",
+        "Answer": "Private constructor is a constructor with the access modifier private. It prevents the creation of an instance of the class directly from outside the class. Private constructors are typically used in specific design patterns and scenarios to enforce constraints on how instances of a class are created. <br/><br/> We can't inherite member of class having private constructor <br/> <img src='../images/csharp/20.1.PNG'>"
+    },
+    {
+        "srNo": "21",
+        "Question": "Can a private virtual method be overridden?",
+        "Answer": "A private virtual method cannot exist because it contradicts the concept of overriding. <br/> Use protected for methods that should be overridden in derived classes but not accessible outside the class hierarchy."
     }
 ]
 }

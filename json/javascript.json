@@ -12,5 +12,17 @@
         "srNo": "3",
         "Question": "How does the this keyword work in JavaScript?",
         "Answer":"The this keyword in JavaScript refers to the current context or current execution environment within a function, method, or object. Its value is determined by how a function is called, and not where it is defined. This is one of the unique features of JavaScript, as this can behave differently depending on the context in which a function is invoked. <br/> <br/> <img src='../images/javascript/3.1.PNG'/>"
-    }]
+    },
+    {
+        "srNo":"4",
+        "Question": "How to access parent element of an span",
+        "Answer": "let currentElement = document.getElementById('child'); currentElement = currentElement.parentElement; <br/> const parentElement = $('#child').parent();"
+    },
+    {
+        "srNo": "5",
+        "Question": "What is event.preventDefault()",
+        "Answer": "event.preventDefault() is a method in JavaScript that prevents the default action associated with an event from being executed. It is commonly used in event handling to override the default behavior of an element when an event is triggered. <br/> <img src='../images/javascript/5.1.PNG'> "        
+    }
+
+]
 }
