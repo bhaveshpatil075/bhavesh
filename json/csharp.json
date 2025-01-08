@@ -102,6 +102,16 @@
         "srNo": "21",
         "Question": "Can a private virtual method be overridden?",
         "Answer": "A private virtual method cannot exist because it contradicts the concept of overriding. <br/> Use protected for methods that should be overridden in derived classes but not accessible outside the class hierarchy."
+    },
+    {
+        "srNo": "22",
+        "Question": "What is the difference between IEnumerable, IQueryable, and List in C#?",
+        "Answer": "<ol><li>IEnumerable:  Represents a sequence of objects that can be enumerated. It is defined in the System.Collections or System.Collections.Generic namespace for generic collections. <br/> <br/> <img src='../images/csharp/22.1.PNG'>  </li><li>IQueryable: Extends IEnumerable and adds functionality to allow LINQ queries to be translated to a query language (e.g., SQL). It is defined in the System.Linq namespace. <br/> <br/> <img src='../images/csharp/22.2.PNG'> </li><li>List<T>:A concrete implementation of IList<T> and ICollection<T>. It is a generic collection class in System.Collections.Generic.  <br/> <br/> <img src='../images/csharp/22.3.PNG'></li></ol><br/> <br/> <img src='../images/csharp/22.4.PNG'>"
+    },
+    {
+        "srNo": "23",
+        "Question": "Difference between getype and typeof in c#",
+        "Answer": "<ol><li>GetType(): GetType() is a method defined on the Object class. It is used to get the runtime type of an object instance.</li> <li>typeof: typeof is an operator in C# that is used to get the Type object for a static type at compile-time. </li></ol> <br/><br/> <img src='../images/csharp/23.1.PNG'> <br/>"
     }
 ]
 }
