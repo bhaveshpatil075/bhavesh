@@ -37,6 +37,16 @@
         "srNo": "8",
         "Question": "Difference between slice() and splice() ",
         "Answer": "<ol><li>slice(): To extract a portion of an array without modifying the original array. Returns a new array containing the selected elements. <br/><br/> <img src='../images/javascript/8.1.PNG'> <br/><br/></li><li>splice(): To add, remove, or replace elements in an array. return an array containing the removed elements. Modifies the original array. <br/><br/> <img src='../images/javascript/8.2.PNG'> <br/><br/>  <img src='../images/javascript/8.3.PNG'> </li></ol>"
+    },
+    {
+        "srNo": "9",
+        "Question": "What are the differences between var, let, and const in javascript?",
+        "Answer": "The differences between var, let, and const in JavaScript primarily revolve around scoping, hoisting, reassignment, and redeclaration. <br/><br/> <ol><li>Scope:<br/>  <img src='../images/javascript/9.1.PNG'> <br/> <img src='../images/javascript/9.2.PNG'> <br/><br/></li> <li>Hoisting: <br/> <img src='../images/javascript/9.3.PNG'> <br/><br/> <img src='../images/javascript/9.4.PNG'>  <br/><br/></li> <li>Reassignment: <br/> <img src='../images/javascript/9.5.PNG'> <br/> <br/> </li> <li>Redeclaration: <img src='../images/javascript/9.6.PNG'> <br/><br/></li></ol> <img src='../images/javascript/9.7.PNG'>"        
+    },
+    {
+        "srNo": "10",
+        "Question": "Explain the difference between call(), apply(), and bind(). Provide use cases.",
+        "Answer": "The call(), apply(), and bind() methods in JavaScript are used to explicitly set the value of this and invoke or bind functions in different ways. <ol><li>call(): Calls a function immediately with a specified this value and arguments provided individually. <br/> Syntax: function.call(thisArg, arg1, arg2, ...) <br/> <img src='../images/javascript/10.1.PNG'> <br/><br/>  </li><li>apply(): Calls a function immediately with a specified this value and arguments provided as an array. <br/> Syntax: function.apply(thisArg, [argsArray]) <img src='../images/javascript/10.2.PNG'> <br/><br/> </li><li>bind(): Creates a new function with a specified this value and optional preset arguments. The function is not invoked immediately. <img src='../images/javascript/10.3.PNG'> <br/><br/> </li></ol> <img src='../images/javascript/10.4.PNG'>"
     }
 
 ]
