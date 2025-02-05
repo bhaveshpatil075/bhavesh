@@ -5,12 +5,33 @@
         "Answer": "<img src='../images/linq/lambdaInnerJoin.PNG'>"
     },{
         "srNo": "2",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "How does deferred execution work in LINQ?",
+        "Answer":"Deferred execution in LINQ means that the query is not executed until it is enumerated (e.g., by calling ToList(), ToArray(), or foreach). This allows the query to be dynamically modified before execution, such as adding filters or ordering. <br/> <br/> <img src='../images/linq/2.PNG'>"
     },
     {
         "srNo": "3",
-        "Question": "John Doe",
-        "Answer":""
-    }]
+        "Question": "How can you perform a left join in LINQ?",
+        "Answer":"A left join can be simulated in LINQ using GroupJoin, followed by SelectMany to flatten the result set. <br/><br/> <img src='../images/linq/3.PNG'> <br/><br/> <img src='../images/linq/3.1.PNG'>"
+    },
+    {
+        "srNo": "4",
+        "Question": "What is LINQ's SelectMany method, and how does it differ from Select?",
+        "Answer": "<img src='../images/linq/4.1.PNG'> <br/><br/> <img src='../images/linq/4.2.PNG'>"
+    }, 
+    {
+        "srNo": "5",
+        "Question": "What is the difference between IEnumerable and IQueryable in LINQ?",
+        "Answer": "Explain how IEnumerable is for in-memory collections, while IQueryable is for remote data sources with deferred execution."
+    },
+    {
+        "srNo": "6",
+        "Question": "How do you perform grouping in LINQ?",
+        "Answer": "Query Syntax Example: <br/> <img src='../images/linq/6.1.PNG'> <br/><br/> Method Syntax Example: <br/>  <img src='../images/linq/6.2.PNG'>"
+    },
+    {
+        "srNo": "7",
+        "Question": "What is the difference between First(), FirstOrDefault(), Single(), and SingleOrDefault()?",
+        "Answer":"<ol><li>First(): Returns the first element in a collection that matches the condition (if specified). <br/> <img src='../images/linq/7.1.PNG'> <br/><br/> </li> <li>FirstOrDefault(): imilar to First(), but returns the default value (e.g., null for reference types or 0 for numeric types) if no matching element is found or if the collection is empty. <br/> <img src='../images/linq/7.2.PNG'><br/><br/></li><li>Single():Returns the only element in a collection that matches the condition <br/> <img src='../images/linq/7.3.PNG'></li><li>SingleOrDefault(): Similar to Single(), but returns the default value (e.g., null or 0) if no matching element is found or if the collection is empty.<img src='../images/linq/7.4.PNG'></li></ol>"
+    }
+]
 }

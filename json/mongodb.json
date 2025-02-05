@@ -1,16 +1,16 @@
 {
     "data":[ {
         "srNo": "1",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "What is aggregation in MongoDB?",
+        "Answer":"Aggregation in MongoDB is a framework for processing and transforming data in collections. It allows for complex computations, filtering, and reshaping of documents using a pipeline-based approach.<br/><br/><img src='../images/mongo/1.1.PNG'><br/><img src='../images/mongo/1.2.PNG'>"
     },{
         "srNo": "2",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "Difference Between find() and aggregate() in MongoDB",
+        "Answer":"<img src='../images/mongo/2.1.PNG'>"
     },
     {
         "srNo": "3",
-        "Question": "John Doe",
-        "Answer":""
+        "Question": "How do you perform joins in MongoDB?",
+        "Answer":"MongoDB does not have traditional SQL-style joins but provides the $lookup stage in the aggregation framework to perform left outer joins between collections.<br/><br/>The $lookup stage allows you to join documents from two collections based on a specified field.<img src='../images/mongo/3.1.PNG'><br/><br/><img src='../images/mongo/3.2.PNG'><br/><br/><img src='../images/mongo/3.3.PNG'><br/><br/><img src='../images/mongo/3.4.PNG'>"
     }]
 }

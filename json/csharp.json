@@ -112,6 +112,6 @@
         "srNo": "23",
         "Question": "Difference between getype and typeof in c#",
         "Answer": "<ol><li>GetType(): GetType() is a method defined on the Object class. It is used to get the runtime type of an object instance.</li> <li>typeof: typeof is an operator in C# that is used to get the Type object for a static type at compile-time. </li></ol> <br/><br/> <img src='../images/csharp/23.1.PNG'> <br/>"
-    }
+    }    
 ]
 }
