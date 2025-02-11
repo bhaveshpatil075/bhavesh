@@ -12,5 +12,45 @@
         "srNo": "3",
         "Question": "How do you perform joins in MongoDB?",
         "Answer":"MongoDB does not have traditional SQL-style joins but provides the $lookup stage in the aggregation framework to perform left outer joins between collections.<br/><br/>The $lookup stage allows you to join documents from two collections based on a specified field.<img src='../images/mongo/3.1.PNG'><br/><br/><img src='../images/mongo/3.2.PNG'><br/><br/><img src='../images/mongo/3.3.PNG'><br/><br/><img src='../images/mongo/3.4.PNG'>"
+    },
+    {
+        "srNo":"4",
+        "Question": "What Are Indexes in MongoDB?",
+        "Answer": "Indexes in MongoDB are special data structures that improve the speed of queries by allowing efficient lookups on specific fields. They store a small portion of the collection’s data in an optimized form, making it faster to find documents."
+    },
+    {
+        "srNo"   :"5",
+        "Question": "Relational vs non-relational databases ",
+        "Answer": "<img src='../images/mongo/5.1.PNG'>"
+    },
+    {
+        "srNo": "6",
+        "Question": "What is BSON, and how is it related to JSON?",
+        "Answer": "<img src='../images/mongo/6.1.PNG'>"
+    },
+    {
+        "srNo": "7",
+        "Question": "Common Comparison Query Operators in MongoDB ?",
+        "Answer": "<img src='../images/mongo/7.1.PNG'>"       
+    },
+    {
+        "srNo": "8",
+        "Question": "MongoDB Commands",
+        "Answer": "<img src='../images/mongo/8.1.PNG'>"       
+    },
+    {
+        "srNo": "9",
+        "Question":"What is the difference between populate() and $lookup?",
+        "Answer": "Both populate() and $lookup in MongoDB serve the purpose of performing joins across collections, but they are used in different contexts and have distinct functionalities. <br/> <br/> <img src='../images/mongo/9.1.PNG'> <br/><br/> Here, populate('author') will replace the author field with the corresponding user document. <br/> 2. $lookup <br/> <img src='../images/mongo/9.2.PNG'> <br/><br/> <img src='../images/mongo/9.3.PNG'> "    
+    },
+    {
+        "srNo": "10",
+        "Question": "What is Sharding in MongoDB?",
+        "Answer": "Sharding is MongoDB’s horizontal scaling mechanism used to distribute large datasets across multiple servers, improving performance, scalability, and availability. <br/><br/> <img src='../images/mongo/10.1.PNG'>"
+    },
+    {
+        "srNo": "11",
+        "Question": "How does MongoDB ensure data consistency?",
+         "Answer": "MongoDB ensures consistency using:<br/><ul><li>Replica Sets (for automatic failover).</li><li>Journaling (to prevent data loss).</li><li>Write Concern ({ w: 'majority' }) ensures write is confirmed by multiple nodes.</li></ul>"
     }]
 }
