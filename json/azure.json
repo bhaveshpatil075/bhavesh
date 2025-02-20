@@ -24,18 +24,23 @@
     },{
         "srNo": "6",
         "Question":"What is Azure Kubernetes Service (AKS)?",
-        "Answer": ""
+        "Answer": "Azure Kubernetes Service (AKS) is a managed Kubernetes service that allows you to deploy, manage, and scale containerized applications in the cloud without having to manage the underlying infrastructure. AKS simplifies Kubernetes operations by handling cluster maintenance, scaling, upgrades, and security integration with Azure services. <br/><br/> <img src='../images/azure/6.1.PNG'> "
     },{
         "srNo": "7",
-        "Question":"What is Azure DevOps, and how is it used?",
-        "Answer": ""
+        "Question":"What are the different types of Azure Storage (Blob, Table, Queue, File), and how can a .NET application interact with them?",
+        "Answer": "Azure Storage offers different services to store and manage structured, semi-structured, and unstructured data. A .NET application can interact with Azure Storage using the Azure SDK. <br/><br/> <img src='../images/azure/7.1.PNG'>"
     },{
         "srNo": "8",
-        "Question":"What are Azure Functions, and how do they work?",
-        "Answer": ""
+        "Question":"What is the difference between Azure Web Apps, Azure API Apps, and Azure Function Apps?",
+        "Answer": "Azure Web Apps, API Apps, and Function Apps are all part of Azure App Service, a Platform-as-a-Service (PaaS) offering. While they share many similarities, they are optimized for different use cases. <img src='../images/azure/8.1.PNG'>"
     },{
         "srNo": "9",
-        "Question":"What is an Azure Load Balancer, and how does it work?",
-        "Answer": ""
+        "Question":"What is Azure Virtual Machine (VM), and when should you use it instead of App Service?",
+        "Answer": "<br/><br/>Azure VMs are preferred over Azure App Service in the following scenarios:<br/><br/><ol><li>Full Control Over the OS and Software:If you need to install custom software, specific OS versions, or run background services that App Service does not support, Azure VM is the better choice.</li><li>Hosting Non-Web Workloads: Azure App Service is optimized for web applications (APIs, websites, and mobile backends). If you need to run a database server, file processing, or other non-web workloads, a VM is required.</li><li>Custom Networking and Security Needs: VMs allow for advanced networking configurations, such as custom firewalls, VPN setups, and private networking, which App Service does not fully support.</li><li>Long-Running Background Tasks: If your application requires persistent background processes that cannot be handled by App Service's WebJobs, a VM is a better fit.</li><li>Specific Performance and Compute Requirements : If your application requires high-performance computing (HPC), GPU acceleration, or large-scale memory and processing power, a VM provides more flexibility.</li><li>Support for Legacy Applications: If you're migrating an existing application that requires full access to the OS and dependencies that cannot be easily containerized, a VM is ideal.</li></ol>"
+    },
+    {
+        "srNo": "10",
+        "Question": "Difference Between Azure Region, Availability Zone, and Resource Group?",
+        "Answer": "<img src='../images/azure/10.1.PNG'>"
     }]
 }
