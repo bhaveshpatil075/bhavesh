@@ -25,18 +25,64 @@
     },
     {
         "srNo": "6",
-        "Question": "",
-        "Answer":""
+        "Question": "What are template reference variables? How are they used?",
+        "Answer":"A Template Reference Variable is a way to get direct access to an element, component, or directive in the template. It is declared using the # symbol inside the template and allows you to reference that element within the same template. <img src='../images/angular/6.1.PNG'><br/><br/><img src='../images/angular/6.2.PNG'><br/><br/><img src='../images/angular/6.3.PNG'>"
     },
     {
         "srNo": "7",
-        "Question": "",
-        "Answer":""
+        "Question": "What’s the difference between Template-Driven and Reactive Forms?",
+        "Answer":"Template-Driven Forms and Reactive Forms are two different approaches to handling forms in Angular, each with its own strengths and use cases <br/><br/> <img src='../images/angular/7.1.PNG'> <br/><br/> <img src='../images/angular/7.2.PNG'> <br/><br/> <img src='../images/angular/7.3.PNG'> "
     },
     {
         "srNo": "8",
+        "Question": "What are route guards, and name a few types?",
+        "Answer":"Route Guards in Angular are interfaces that control navigation to and from a route. They help in securing routes, managing permissions, and preventing unauthorized access to certain pages. <br/><br/> These guards return true (allow navigation) or false (block navigation), and can also return an Observable or Promise for asynchronous checks. <br/><br/> <img src='../images/angular/8.1.PNG'> <br/><br/> <img src='../images/angular/8.2.PNG'>"
+    },
+    {
+        "srNo": "9",
+        "Question": "What is FormBuilder, and why use it?",
+        "Answer": "FormBuilder is a service in Angular that simplifies the creation and management of Reactive Forms. It reduces boilerplate code by providing an easy way to create FormGroup and FormControl instances. "
+    },
+    {
+        "srNo": "10",
+        "Question": "What is an Observable, and how is it used in Angular?",
+        "Answer": "An Observable is a core concept in RxJS (Reactive Extensions for JavaScript), which Angular uses for handling asynchronous operations. It represents a stream of data that can emit values over time, making it useful for handling events, HTTP requests, and real-time updates. <br/><br/> <img src='../images/angular/10.1.PNG'> "
+    },
+    {
+        "srNo": "11",
+        "Question": "What is a Polyfill in Angular?",
+        "Answer": "A polyfill is a script that provides modern JavaScript features in older browsers that do not support them natively. In Angular, polyfills ensure that the application runs smoothly across different browsers, including legacy ones like Internet Explorer 11. <br/><br/> <img src='../images/angular/11.1.PNG'>"
+    },
+    {
+        "srNo": "12",
+        "Question": "What are Angular Pipes? Can you create a custom pipe?",
+        "Answer": "In Angular, a Pipe is a feature that transforms data before displaying it in a template. Pipes are used to format, filter, or manipulate values in a declarative way. <br/><br/> <img src='../images/angular/12.2.PNG'><br/><br/><img src='../images/angular/12.1.PNG'><br/><br/>"
+    },
+    {
+        "srNo": "13",
+        "Question": "What are the types of data binding in Angular?",
+        "Answer": "In Angular, data binding is a powerful mechanism that allows you to establish a connection between the application’s data (in the component) and the user interface (in the template). It ensures that changes in one are reflected in the other, making the UI dynamic and interactive. Angular supports four main types of data binding, each serving a specific purpose. Let’s explore them in detail: <br/><br/> <img src='../images/angular/13.1.PNG'>"
+    },
+    {
+        "srNo": "14",
         "Question": "",
-        "Answer":""
+        "Answer": ""
+    },
+    {
+        "srNo": "15",
+        "Question": "",
+        "Answer": ""
+    },
+    {
+        "srNo": "16",
+        "Question": "",
+        "Answer": ""
+    },
+    {
+        "srNo": "17",
+        "Question": "",
+        "Answer": ""
     }
+    
 ]
 }
