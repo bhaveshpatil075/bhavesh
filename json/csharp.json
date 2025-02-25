@@ -112,6 +112,41 @@
         "srNo": "23",
         "Question": "Difference between getype and typeof in c#",
         "Answer": "<ol><li>GetType(): GetType() is a method defined on the Object class. It is used to get the runtime type of an object instance.</li> <li>typeof: typeof is an operator in C# that is used to get the Type object for a static type at compile-time. </li></ol> <br/><br/> <img src='../images/csharp/23.1.PNG'> <br/>"
-    }    
+    },
+    {
+        "srNo": "24",
+        "Question": "Can you store different types in an array in c#",
+        "Answer": "Yes, you can store different types in an array in C# using object arrays, arrays of interfaces, or tuples. However, there are some trade-offs regarding type safety and performance. <br/><br/> <img src='../images/csharp/24.1.PNG'> "
+    },
+    {
+        "srNo": "25",
+        "Question": "Can an abstract class have a constructor?",
+        "Answer": "Yes, an abstract class can have a constructor in object-oriented programming languages like Java and C#. <br/><br/> Although you cannot instantiate an abstract class directly, its constructor can be called when a subclass object is created. <br/><br/> It is mainly used to initialize common fields and perform setup tasks needed by the subclass. <br/><br/>The constructor is executed before the derived class constructor when an instance of a subclass is created."
+    },
+    {
+        "srNo": "26",
+        "Question": "Calling an abstract method from an abstract class constructor?",
+        "Answer": "Yes, you can call an abstract method from an abstract class constructor in C#, but it comes with risks due to the way constructors execute in inheritance. <br/><br/> <img src='../images/csharp/26.1.PNG'>"
+    },
+    {
+        "srNo": "27",
+        "Question": "What happens if finally block throws an exception",
+        "Answer": " <img src='../images/csharp/27.1.PNG'>"
+    },
+    {
+        "srNo": "28",
+        "Question": "Difference between is and as keyword",
+        "Answer": "The is and as keywords in C# are both used for type checking and conversion, but they serve different purposes. <br/><br/> 1. is Keyword (Type Checking) <br/><br/> The is keyword checks if an object is of a specific type and returns a Boolean (true/false). <br/> It does not perform type conversion—it only checks compatibility. <br/><br/> 2. as Keyword (Safe Type Conversion) <br/><br/> The as keyword tries to cast an object to a specific type. <br/> If the conversion fails, it returns null instead of throwing an exception. <br/> It only works with reference types and nullable types (not value types like int). <br/><br/> <img src='../images/csharp/28.1.PNG'>"
+    },
+    {
+        "srNo": "29",
+        "Question": "C# abstract class virtual method?",
+        "Answer": " <img src='../images/csharp/29.1.PNG'>"
+    },
+    {
+        "srNo": "30",
+        "Question": "C# Default Constructor & Its Access Modifiers",
+        "Answer": "If you do not define any constructor, C# provides an implicit public default constructor. <br/><br/> If you define a constructor explicitly, no default constructor is created unless you manually add it."
+    }
 ]
 }

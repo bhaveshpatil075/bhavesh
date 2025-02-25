@@ -52,6 +52,21 @@
         "srNo": "11",
         "Question": "Can we have temp tables in functions ?",
         "Answer": "No, you cannot use #Temp or ##GlobalTemp tables inside a User-Defined Function (UDF) in SQL Server. <br/><br/>  Reason: <br/> Functions must be deterministic, meaning they cannot modify database state. <br/> Temporary tables (#TempTable) are not allowed because they involve changes in database structure. <br/><br/> <img src='../images/sql/11.1.PNG'>"
+    },
+    {
+        "srNo": "12",
+        "Question": "Sql query to delete from multiple (parent-child) tables?",
+        "Answer": "Using ON DELETE CASCADE (Recommended if Foreign Keys Exist) <br/> If your database has a foreign key with ON DELETE CASCADE, deleting a parent record will automatically delete child records. <br/><br/> <img src='../images/sql/12.1.PNG'>"
+    },
+    {
+        "srNo": "13",
+        "Question": "Sql query to select all names that start with a given letter without like operator",
+        "Answer": "If you want to select all names that start with a given letter without using the LIKE operator, you can use functions like LEFT(), SUBSTRING(), CharIndex() <br/><br/> <img src='../images/sql/13.1.PNG'>"
+    },
+    {
+        "srNo": "14",
+        "Question": "Difference between blocking and deadlocking in sql",
+        "Answer": "Blocking and deadlocking are both concurrency issues in SQL databases, but they are different in nature. <br/><br/><ol><li>Blocking :  Occurs when one transaction holds a lock on a resource, and another transaction is waiting for that lock to be released. <br/><br/>Blocking is temporary and usually resolves when the first transaction completes. <br/><br/> Resolved when the first transaction commits or rolls back <br/><br/> Typically happens in highly concurrent environments<br/><br/></li><li>Deadlocking : Occurs when two or more transactions hold locks on resources that the other transactions need, creating a circular dependency. <br/><br/> Neither transaction can proceed, leading to a deadlock. <br/><br/> Permanent issue unless resolved <br/><br/> The database chooses one transaction to rollback to break the deadlock</li></ol"
     }
 ]
 }
