@@ -1,0 +1,62 @@
+{
+    "data":[ {
+        "srNo": "1",
+        "Question": "How does Node.js work?",
+        "Answer":"Node.js is a runtime environment that allows you to run JavaScript outside of a web browser, primarily on the server side. It is built on Chrome's V8 JavaScript engine, which makes it fast and efficient.<br/><br/><img src='../images/nodejs/1.1.PNG'>"
+    },
+    {
+        "srNo": "2",
+        "Question": "What are the key features of Node.js?",
+        "Answer":"Node.js is a runtime environment that allows you to run JavaScript outside of a web browser, primarily on the server side. It is built on Chrome's V8 JavaScript engine, which makes it fast and efficient. <oL><li>Asynchronous & Event-Driven: <img src='../images/nodejs/2.1.PNG'> <br/><br/></li><li>Single-Threaded but Highly Scalable: <img src='../images/nodejs/2.2.PNG'> <br/><br/></li><li>Non-Blocking I/O:  <img src='../images/nodejs/2.3.PNG'> <br/><br/></li><li>Asynchronous & Event-Driven:  <img src='../images/nodejs/2.4.PNG'> <br/><br/></li></ol>"
+    },
+    {
+        "srNo": "3",
+        "Question": "What is the V8 Engine in Node.js?",
+        "Answer": "The V8 engine is an open-source JavaScript engine developed by Google, written in C++, and used in Google Chrome and Node.js to execute JavaScript. It converts JavaScript code into machine code for fast execution."
+    },
+    {
+        "srNo": "4",
+        "Question": "What is the Event Loop in Node.js?",
+        "Answer": "The event loop is the core mechanism that allows Node.js to handle asynchronous, non-blocking operations efficiently using a single thread. It continuously checks for tasks, executes them, and delegates async operations (like file I/O, database queries, and network requests) to the system. <br/><br/><img src='../images/nodejs/4.1.PNG'><br/><br/> <img src='../images/nodejs/4.2.PNG'>"
+    },
+    {
+        "srNo": "5",
+        "Question": "How Do Callbacks Work in Node.js?",
+        "Answer": "A callback in Node.js is a function that is passed as an argument to another function and is executed later, usually after an asynchronous operation completes. <br/><br/><img src='../images/nodejs/5.1.PNG'><br/><br/> <img src='../images/nodejs/5.2.PNG'>"
+    },
+    {
+        "srNo": "6",
+        "Question": "What is Middleware in Express.js?",
+        "Answer": "Middleware in Express.js is a function that executes during the request-response cycle. It can modify requests, responses, or stop the request entirely before reaching the final route handler. <br/><br/>Types of Middleware in Express.js<br/><br/><uL><li>Built-in Middleware (Included in Express)</li><li>Third-party Middleware (Installed via NPM)</li><li>Custom Middleware (User-defined)</li></uL> <br/><br/>  <img src='../images/nodejs/6.1.PNG'>"
+    },
+    {
+        "srNo": "7",
+        "Question": "What is Clustering in Node.js?",
+        "Answer": "Clustering in Node.js is a technique that allows you to create multiple processes (workers) to take advantage of multi-core CPUs, improving application performance and scalability.<br/><br/>By default, Node.js runs in a single-threaded mode, meaning it can only use one CPU core at a time. Clustering helps overcome this limitation by forking multiple worker processes to handle incoming requests efficiently."
+    },
+    {
+        "srNo": "8",
+        "Question": "What is the Purpose of the worker_threads Module in Node.js?",
+        "Answer": "The worker_threads module in Node.js enables multi-threading, allowing you to run JavaScript code in parallel across multiple CPU cores. This helps handle CPU-intensive tasks without blocking the main event loop. <br/><br/> <img src='../images/nodejs/8.1.PNG'>"
+    },
+    {
+        "srNo": "9",
+        "Question": "Difference Between process.nextTick() and setImmediate() in Node.js",
+        "Answer": "Both process.nextTick() and setImmediate() are used to schedule callbacks, but they execute at different phases of the event loop."
+    },
+    {
+        "srNo": "10",
+        "Question": "How Garbage Collection Works in Node.js",
+        "Answer": "Garbage collection (GC) in Node.js is automatically managed by the V8 engine, which removes unused or unreachable objects from memory to prevent memory leaks and optimize performance."
+    },
+    {
+        "srNo": "11",
+         "Question": "What is node-gyp in Node.js?",
+         "Answer": "node-gyp is a build tool used to compile native C/C++ addons for Node.js. It enables Node.js applications to interface with lower-level system libraries, improving performance for CPU-intensive tasks."
+    },
+    {
+        "srNo": "12",
+        "Question": "What is a memory leak in Node.js, and how do you prevent it?",
+        "Answer": "A memory leak occurs when an application fails to release unused memory, causing RAM usage to grow over time. In Node.js, memory leaks can degrade performance and eventually crash the application due to out-of-memory (OOM) errors. <br/><br/><img src='../images/nodejs/12.1.PNG'>"
+    }
+]}
