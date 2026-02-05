@@ -42,5 +42,60 @@
         "srNo": "10",
         "Question": "Difference Between Azure Region, Availability Zone, and Resource Group?",
         "Answer": "<img src='../images/azure/10.1.PNG'>"
+    },
+    {
+        "srNo": "11",
+        "Question": "What is Azure Resource Manager (ARM) template?",
+        "Answer": "Azure Resource Manager (ARM) template is a JSON file that defines the infrastructure for your Azure resources. It is used to deploy and manage your resources in a consistent and repeatable manner. <br/><br/> <img src='../images/azure/11.1.PNG'>"
+    },
+    {
+        "srNo": "12",
+        "Question": "What is Azure Policy?",
+        "Answer": "Azure Policy is a service that allows you to create, assign, and manage policies that enforce rules and regulations on your Azure resources. <br/><br/> <img src='../images/azure/12.1.PNG'>"
+    },
+    {
+        "srNo": "13",
+        "Question": "What is Azure Monitor?",
+        "Answer": "Azure Monitor is a service that allows you to monitor your Azure resources and applications. <br/><br/> <img src='../images/azure/13.1.PNG'>"
+    },
+    {
+        "srNo": "14",
+        "Question": "What is Azure Security Center?",
+        "Answer": "Azure Security Center is a service that allows you to monitor your Azure resources and applications for security threats and vulnerabilities. <br/><br/> <img src='../images/azure/14.1.PNG'>"
+    },
+    {
+        "srNo": "15",
+        "Question": "What is Azure Backup?",
+        "Answer": "Azure Backup is a service that allows you to backup your Azure resources and applications. <br/><br/> <img src='../images/azure/15.1.PNG'>"
+    },
+    {
+        "srNo": "16",
+        "Question": "What is Azure Site Recovery?",
+        "Answer": "Azure Site Recovery is a service that allows you to replicate your Azure resources and applications to another region. <br/><br/> <img src='../images/azure/16.1.PNG'>"
+    },
+    {
+        "srNo": "17",
+        "Question": "What is Azure DevOps?",
+        "Answer": "Azure DevOps is a service that allows you to manage your code and build your applications. <br/><br/> <img src='../images/azure/17.1.PNG'>"
+    },
+    {
+        "srNo": "18",
+        "Question": "What is Azure Pipelines?",
+        "Answer": "Azure Pipelines is a service that allows you to build and deploy your applications. <br/><br/> <img src='../images/azure/18.1.PNG'>"
+    },
+    {
+        "srNo": "19",
+        "Question": "What is Azure Key Vault?",
+        "Answer": "Azure Key Vault is a service that allows you to store and manage your secrets and keys. <br/><br/> <img src='../images/azure/19.1.PNG'>"
+    },
+    {
+        "srNo": "20",
+        "Question": "What is Azure Cosmos DB?",
+        "Answer": "Azure Cosmos DB is a service that allows you to store and manage your data. <br/><br/> <img src='../images/azure/20.1.PNG'>" 
+    },
+    {
+        "srNo": "21",,
+        "Question": "What is Azure Scale Set?",
+        "Answer": "Azure Scale Set is a service that allows you to scale your Azure resources. <br/><br/> <img src='../images/azure/21.1.PNG'>"
     }]
 }

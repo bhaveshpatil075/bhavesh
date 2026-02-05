@@ -1,0 +1,12 @@
+{
+    "data":[ {
+        "srNo": "1",
+        "Question": "What is AWS?",
+        "Answer":"Amazon Web Services (AWS) is a comprehensive cloud computing platform provided by Amazon. It offers a wide range of cloud services including computing power, storage, databases, networking, analytics, machine learning, and more, delivered over the internet with a pay-as-you-go pricing model."
+    },{
+        "srNo": "2",
+        "Question": "What is IAM?",
+        "Answer":"IAM (Identity and Access Management) is an AWS service that helps you securely control access to AWS resources. IAM enables you to manage users, groups, and roles, and their permissions to access AWS services and resources. Key features include:<br/><br/><ul><li><strong>Users:</strong> Individual accounts that can be assigned specific permissions</li><li><strong>Groups:</strong> Collections of users that share the same permissions</li><li><strong>Roles:</strong> Temporary credentials that can be assumed by users, services, or applications</li><li><strong>Policies:</strong> JSON documents that define permissions (what actions are allowed or denied on which resources)</li><li><strong>Multi-Factor Authentication (MFA):</strong> Additional security layer requiring a second form of authentication</li><li><strong>Access Keys:</strong> Credentials for programmatic access to AWS services</li></ul><br/>IAM follows the principle of least privilege, ensuring users and services only have the minimum permissions necessary to perform their tasks."
+    }]
+}
+
