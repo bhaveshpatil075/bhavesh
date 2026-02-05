@@ -94,7 +94,7 @@
         "Answer": "Azure Cosmos DB is a service that allows you to store and manage your data. <br/><br/> <img src='../images/azure/20.1.PNG'>" 
     },
     {
-        "srNo": "21",,
+        "srNo": "21",
         "Question": "What is Azure Scale Set?",
         "Answer": "Azure Scale Set is a service that allows you to scale your Azure resources. <br/><br/> <img src='../images/azure/21.1.PNG'>"
     }]
