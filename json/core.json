@@ -73,6 +73,21 @@
         "srNo": "15",
         "Question": "API is slow in production. How will you debug?",
         "Answer":"<ul><li><strong>Application Insights/APM Tools:</strong> Use Application Insights, New Relic, or Datadog to identify slow endpoints, database queries, and external API calls with detailed timing information</li><li><strong>Response Time Logging:</strong> Add middleware to log request/response times for each endpoint. Track slow requests (e.g., &gt; 1 second)</li><li><strong>Database Query Analysis:</strong> Enable EF Core query logging, use SQL Profiler, or Application Insights to identify slow queries, missing indexes, or N+1 problems</li><li><strong>Performance Counters:</strong> Monitor CPU, memory, thread pool, and connection pool metrics to identify resource bottlenecks</li><li><strong>Correlation IDs:</strong> Use correlation IDs to trace requests across services and identify which service is causing delays</li><li><strong>Profiling Tools:</strong> Use dotTrace, PerfView, or Visual Studio Diagnostic Tools to profile CPU and memory usage in production</li><li><strong>Check Dependencies:</strong> Monitor external API calls, database connections, cache hits/misses, and message queue processing times</li><li><strong>Review Logs:</strong> Analyze structured logs for patterns: slow endpoints, frequent errors, high request volumes, or specific user scenarios</li><li><strong>Load Testing:</strong> Reproduce the issue with load testing tools (JMeter, k6) to identify performance degradation under load</li><li><strong>Code Review:</strong> Check for synchronous I/O operations, missing async/await, inefficient algorithms, or blocking calls</li><li><strong>Network Analysis:</strong> Check network latency, DNS resolution times, and connection pool exhaustion</li><li><strong>Common Issues:</strong> Look for missing indexes, inefficient queries, lack of caching, blocking async operations, memory leaks, or thread pool starvation</li></ul>"
+    },
+    {
+        "srNo": "16",
+        "Question": "𝗣𝗮𝗴𝗶𝗻𝗮𝘁𝗶𝗼𝗻 𝗶𝗻 𝗘𝗙 𝗖𝗼𝗿𝗲",
+        "Answer": "<img src='../images/core/16.1.jfif'>"
+    },
+    {
+        "srNo": "17",
+        "Question": "Transient vs Scope vs singalton .net core?",
+        "Answer": "Transient, Scoped, and Singleton define how long a service lives in the Dependency Injection (DI) container. <br/><br/> <img src='../images/core/17.0.PNG'> <br/><br/> <img src='../images/core/17.2.PNG'>" 
+    },
+    {
+        "srNo": "18",
+        "Question": "How did you implement Rate Limiter?",
+        "Answer": "<b>Rate Limiting in .NET 7+</b> is built-in via <code>Microsoft.AspNetCore.RateLimiting</code> middleware.<br/><br/><b>Step 1: Add Rate Limiting Services</b><br/><code>builder.Services.AddRateLimiter(options =><br/>{<br/>    options.GlobalLimiter = PartitionedRateLimiter.Create&lt;HttpContext, string&gt;(context =><br/>        RateLimitPartition.GetFixedWindowLimiter(<br/>            partitionKey: context.User.Identity?.Name ?? context.Request.Headers.Host.ToString(),<br/>            factory: _ => new FixedWindowRateLimiterOptions<br/>            {<br/>                AutoReplenishment = true,<br/>                PermitLimit = 100,<br/>                Window = TimeSpan.FromMinutes(1)<br/>            }));<br/>    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;<br/>});</code><br/><br/><b>Step 2: Use Middleware</b><br/><code>app.UseRateLimiter();</code><br/><br/><b>Rate Limiter Algorithms:</b><br/><ul><li><b>Fixed Window:</b> X requests per time window (e.g., 100 req/min)</li><li><b>Sliding Window:</b> Smooths out burst traffic across segments</li><li><b>Token Bucket:</b> Tokens replenish at fixed rate; allows bursts</li><li><b>Concurrency:</b> Limits concurrent requests (not rate)</li></ul><br/><b>Named Policies:</b><br/><code>options.AddFixedWindowLimiter(\"Api\", opt => {<br/>    opt.PermitLimit = 10;<br/>    opt.Window = TimeSpan.FromSeconds(10);<br/>});<br/><br/>[EnableRateLimiting(\"Api\")]<br/>public class MyController : ControllerBase { }</code><br/><br/><b>Per-Client Limiting:</b> Partition by IP, user ID, or API key using <code>partitionKey</code>.<br/><br/><b>For .NET 6 and earlier:</b> Use <code>AspNetCoreRateLimit</code> NuGet package."
     }
 ]
 }

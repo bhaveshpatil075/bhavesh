@@ -147,6 +147,21 @@
         "srNo": "30",
         "Question": "C# Default Constructor & Its Access Modifiers",
         "Answer": "If you do not define any constructor, C# provides an implicit public default constructor. <br/><br/> If you define a constructor explicitly, no default constructor is created unless you manually add it."
+    },
+    {
+        "srNo": "31",
+        "Question": "What is a record in C#?",
+        "Answer": "A record is a special type of class used to store data only. <br/> It is mainly used when you care about: <ul><li>Storing data</li><li>Comparing data</li><li>Not changing data after creation (immutability) <li/></ul><br/><img src='../images/csharp/31.PNG'> "
+    },
+    {
+        "srNo": "32",
+        "Question": "Prefer async over spanning to maximize performance",
+        "Answer": "<img src='../images/csharp/32.1.PNG'> <br/><br/> <img src='../images/csharp/32.3.jfif'>"
+    },
+    {
+        "srNo": "33",
+        "Question": "What is Task and how it is different from Thread?",
+        "answer": "A Task is a lightweight object that represents an asynchronous operation. It is a wrapper around a thread that provides a way to manage asynchronous operations. <br/><br/> A Thread is a low-level object that represents a thread of execution. It is a wrapper around a thread that provides a way to manage threads."
     }
 ]
 }

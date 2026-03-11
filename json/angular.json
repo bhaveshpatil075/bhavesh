@@ -1,88 +1,169 @@
 {
-    "data":[ {
-        "srNo": "1",
-        "Question": "Angular.json",
-        "Answer":"The angular.json file in Angular is a crucial configuration file for Angular CLI projects. It defines how your Angular project is structured and how it should be built, served, and tested."
-    },{
-        "srNo": "2",
-        "Question": "What is RxJS, and how is it used in Angular?",
-        "Answer": "<ol><li>RxJS (Reactive Extensions for JavaScript) is a library for reactive programming with observables.</li><li>In Angular, RxJS is primarily used for handling asynchronous operations, such as HTTP requests. It uses observables for data streams.</li><li>Example usage with HttpClient: <img src='../images/angular/rxjs.PNG'></li></ol>"
-    },
-    {
-        "srNo": "3",
-        "Question": "What are the lifecycle hooks in Angular?",
-        "Answer":"Angular provides several lifecycle hooks that allow you to control the behavior of components:<ul><li>ngOnInit(): Called after the component is initialized.</li><li>ngOnChanges(): Called when any data-bound property changes.</li><li>ngOnDestroy(): Called just before the component is destroyed.</li><li>ngAfterViewInit(): Called after the component's view (and child views) are fully initialized.</li></ul> <br/> <img src='../images/angular/life-cycle.PNG'></li></ol>"
-    },
-    {
-        "srNo": "4",
-        "Question": "How Lazy Loading Works in Angular",
-        "Answer":"In Angular, lazy loading is typically implemented using the Angular Router. Instead of loading all feature modules at once, lazy loading ensures that certain parts of the application are only loaded when the user navigates to the route associated with them. <br/> Here’s how lazy loading works step by step: <ul><li>Initial Load: Only the necessary modules, like the root module (usually AppModule), are loaded when the application starts. Other feature modules are not loaded until the user navigates to a route that depends on them.</li>    <li>Routing to Lazy-Loaded Modules: When a user navigates to a route that requires a lazy-loaded module, Angular will fetch the corresponding module asynchronously and load it. The module is only requested and loaded when needed, which prevents the entire application from being loaded upfront</li></ul><img src='../images/angular/lazy-loading.PNG'></li>"
-    },
-    {
-        "srNo": "5",
-        "Question": "What is a resolver in Angular, and why is it used?",
-        "Answer":"A resolver is essentially a service that implements the Resolve<T> interface. The resolver service is attached to a route definition. When Angular’s router attempts to activate a route, it first executes the resolver, which can fetch or compute the required data. The route is only activated after the data is successfully fetched or computed.Why Use a Resolver? <ol><li>Ensure Data is Ready Before the Component Loads</li><li>Avoid Manual Data Fetching in Components</li><li>Simplified Error Handling</li><li>Centralized Data Loading</li></ol> <img src='../images/angular/resolver.PNG'>"
-    },
-    {
-        "srNo": "6",
-        "Question": "What are template reference variables? How are they used?",
-        "Answer":"A Template Reference Variable is a way to get direct access to an element, component, or directive in the template. It is declared using the # symbol inside the template and allows you to reference that element within the same template. <img src='../images/angular/6.1.PNG'><br/><br/><img src='../images/angular/6.2.PNG'><br/><br/><img src='../images/angular/6.3.PNG'>"
-    },
-    {
-        "srNo": "7",
-        "Question": "What’s the difference between Template-Driven and Reactive Forms?",
-        "Answer":"Template-Driven Forms and Reactive Forms are two different approaches to handling forms in Angular, each with its own strengths and use cases <br/><br/> <img src='../images/angular/7.1.PNG'> <br/><br/> <img src='../images/angular/7.2.PNG'> <br/><br/> <img src='../images/angular/7.3.PNG'> "
-    },
-    {
-        "srNo": "8",
-        "Question": "What are route guards, and name a few types?",
-        "Answer":"Route Guards in Angular are interfaces that control navigation to and from a route. They help in securing routes, managing permissions, and preventing unauthorized access to certain pages. <br/><br/> These guards return true (allow navigation) or false (block navigation), and can also return an Observable or Promise for asynchronous checks. <br/><br/> <img src='../images/angular/8.1.PNG'> <br/><br/> <img src='../images/angular/8.2.PNG'>"
-    },
-    {
-        "srNo": "9",
-        "Question": "What is FormBuilder, and why use it?",
-        "Answer": "FormBuilder is a service in Angular that simplifies the creation and management of Reactive Forms. It reduces boilerplate code by providing an easy way to create FormGroup and FormControl instances. "
-    },
-    {
-        "srNo": "10",
-        "Question": "What is an Observable, and how is it used in Angular?",
-        "Answer": "An Observable is a core concept in RxJS (Reactive Extensions for JavaScript), which Angular uses for handling asynchronous operations. It represents a stream of data that can emit values over time, making it useful for handling events, HTTP requests, and real-time updates. <br/><br/> <img src='../images/angular/10.1.PNG'> "
-    },
-    {
-        "srNo": "11",
-        "Question": "What is a Polyfill in Angular?",
-        "Answer": "A polyfill is a script that provides modern JavaScript features in older browsers that do not support them natively. In Angular, polyfills ensure that the application runs smoothly across different browsers, including legacy ones like Internet Explorer 11. <br/><br/> <img src='../images/angular/11.1.PNG'>"
-    },
-    {
-        "srNo": "12",
-        "Question": "What are Angular Pipes? Can you create a custom pipe?",
-        "Answer": "In Angular, a Pipe is a feature that transforms data before displaying it in a template. Pipes are used to format, filter, or manipulate values in a declarative way. <br/><br/> <img src='../images/angular/12.2.PNG'><br/><br/><img src='../images/angular/12.1.PNG'><br/><br/>"
-    },
-    {
-        "srNo": "13",
-        "Question": "What are the types of data binding in Angular?",
-        "Answer": "In Angular, data binding is a powerful mechanism that allows you to establish a connection between the application’s data (in the component) and the user interface (in the template). It ensures that changes in one are reflected in the other, making the UI dynamic and interactive. Angular supports four main types of data binding, each serving a specific purpose. Let’s explore them in detail: <br/><br/> <img src='../images/angular/13.1.PNG'>"
-    },
-    {
-        "srNo": "14",
-        "Question": "",
-        "Answer": ""
-    },
-    {
-        "srNo": "15",
-        "Question": "",
-        "Answer": ""
-    },
-    {
-        "srNo": "16",
-        "Question": "",
-        "Answer": ""
-    },
-    {
-        "srNo": "17",
-        "Question": "",
-        "Answer": ""
-    }
-    
-]
+    "data": [
+        {
+            "srNo": "1",
+            "Question": "Angular.json",
+            "Answer": "The angular.json file in Angular is a crucial configuration file for Angular CLI projects. It defines how your Angular project is structured and how it should be built, served, and tested."
+        },
+        {
+            "srNo": "2",
+            "Question": "What is RxJS, and how is it used in Angular?",
+            "Answer": "<ol><li>RxJS (Reactive Extensions for JavaScript) is a library for reactive programming with observables.</li><li>In Angular, RxJS is primarily used for handling asynchronous operations, such as HTTP requests. It uses observables for data streams.</li><li>Example usage with HttpClient: <img src='../images/angular/rxjs.PNG'></li></ol>"
+        },
+        {
+            "srNo": "3",
+            "Question": "What are directives in Angular?",
+            "Answer": "<b>Directives</b> are classes that add additional behavior to elements in your Angular applications. They extend HTML by attaching custom behavior to DOM elements.<br/><br/><b>Types of Directives:</b><br/>(1) <b>Component Directives:</b> Components are directives with a template. Every component is technically a directive.<br/>(2) <b>Structural Directives:</b> Change the DOM layout by adding/removing elements (e.g., *ngIf, *ngFor, *ngSwitch).<br/>(3) <b>Attribute Directives:</b> Change the appearance or behavior of an element (e.g., ngClass, ngStyle, custom directives).<br/><br/><b>Example:</b><br/><code>&lt;div *ngIf=\"isVisible\"&gt;Shown when true&lt;/div&gt;<br/>&lt;p [ngClass]=\"{'highlight': isActive}\"&gt;Styled text&lt;/p&gt;</code>"
+        },
+        {
+            "srNo": "4",
+            "Question": "Explain the different types of Angular directives?",
+            "Answer": "<b>1. Component Directives</b><br/>• Most common type; directives with a template.<br/>• Defined with <code>@Component</code> decorator.<br/>• Example: <code>&lt;app-header&gt;&lt;/app-header&gt;</code><br/><br/><b>2. Structural Directives</b><br/>• Modify the DOM structure by adding or removing elements.<br/>• Prefixed with <code>*</code> (asterisk).<br/>• Examples:<br/>  - <code>*ngIf</code>: Conditionally render elements.<br/>  - <code>*ngFor</code>: Loop through arrays.<br/>  - <code>*ngSwitch</code>: Switch between views.<br/><br/><b>3. Attribute Directives</b><br/>• Change appearance or behavior of existing elements.<br/>• Examples:<br/>  - <code>ngClass</code>: Dynamically add/remove CSS classes.<br/>  - <code>ngStyle</code>: Dynamically set inline styles.<br/>  - Custom directive: <code>[appHighlight]</code><br/><br/><b>Custom Directive Example:</b><br/><code>@Directive({ selector: '[appHighlight]' })<br/>export class HighlightDirective {<br/>  @HostListener('mouseenter') onMouseEnter() {<br/>    this.el.nativeElement.style.backgroundColor = 'yellow';<br/>  }<br/>}</code>"
+        },
+        {
+            "srNo": "5",
+            "Question": "Explain the importance of NPM and Node_Modules folder?",
+            "Answer": "<b>NPM (Node Package Manager):</b><br/>• Package manager for JavaScript/Node.js ecosystem.<br/>• Used to install, update, and manage dependencies for Angular projects.<br/>• Commands: <code>npm install</code>, <code>npm update</code>, <code>npm uninstall</code>.<br/>• Reads <code>package.json</code> to know which packages to install.<br/><br/><b>node_modules Folder:</b><br/>• Contains all installed npm packages and their dependencies.<br/>• Created when you run <code>npm install</code>.<br/>• Can be very large (100s of MBs) due to nested dependencies.<br/>• <b>Never commit to Git</b> – add to <code>.gitignore</code>.<br/>• Can be regenerated anytime by running <code>npm install</code>.<br/><br/><b>Why Important?</b><br/>• Provides all third-party libraries (Angular, RxJS, TypeScript, etc.).<br/>• Enables code reuse and faster development.<br/>• Manages version compatibility between packages."
+        },
+        {
+            "srNo": "6",
+            "Question": "Explain the importance of Package.json file in Angular?",
+            "Answer": "<b>package.json</b> is the manifest file for your Angular project. It defines project metadata and dependencies.<br/><br/><b>Key Sections:</b><br/>(1) <b>name, version:</b> Project identity.<br/>(2) <b>scripts:</b> Define commands like <code>ng serve</code>, <code>ng build</code>, <code>ng test</code>.<br/>(3) <b>dependencies:</b> Packages required for production (Angular, RxJS).<br/>(4) <b>devDependencies:</b> Packages for development only (TypeScript, Karma, Jasmine).<br/><br/><b>Example:</b><br/><code>{<br/>  \"name\": \"my-app\",<br/>  \"version\": \"1.0.0\",<br/>  \"scripts\": {<br/>    \"start\": \"ng serve\",<br/>    \"build\": \"ng build\"<br/>  },<br/>  \"dependencies\": {<br/>    \"@angular/core\": \"^17.0.0\"<br/>  },<br/>  \"devDependencies\": {<br/>    \"typescript\": \"~5.2.0\"<br/>  }<br/>}</code><br/><br/><b>Importance:</b><br/>• Single source of truth for project dependencies.<br/>• Enables reproducible builds across environments.<br/>• <code>npm install</code> reads this file to install packages."
+        },
+        {
+            "srNo": "7",
+            "Question": "What is TypeScript and why do we need it?",
+            "Answer": "<b>TypeScript</b> is a strongly-typed superset of JavaScript developed by Microsoft. It compiles to plain JavaScript.<br/><br/><b>Key Features:</b><br/>• <b>Static Typing:</b> Define types for variables, parameters, return values.<br/>• <b>Interfaces:</b> Define contracts for objects.<br/>• <b>Classes:</b> OOP features like inheritance, access modifiers.<br/>• <b>Generics:</b> Reusable type-safe code.<br/>• <b>Decorators:</b> Metadata annotations (used heavily in Angular).<br/><br/><b>Why TypeScript for Angular?</b><br/>(1) <b>Catch errors at compile time</b> – not runtime.<br/>(2) <b>Better IDE support</b> – autocomplete, refactoring, navigation.<br/>(3) <b>Readability</b> – types serve as documentation.<br/>(4) <b>Maintainability</b> – easier to understand and refactor large codebases.<br/>(5) <b>Angular is built with TypeScript</b> – decorators, DI, and modules rely on TS features.<br/><br/><b>Example:</b><br/><code>interface User {<br/>  id: number;<br/>  name: string;<br/>}<br/>function greet(user: User): string {<br/>  return `Hello, ${user.name}`;<br/>}</code>"
+        },
+        {
+            "srNo": "8",
+            "Question": "Explain importance of Angular CLI?",
+            "Answer": "<b>Angular CLI (Command Line Interface)</b> is a powerful tool that simplifies Angular development.<br/><br/><b>Key Commands:</b><br/>• <code>ng new my-app</code> – Create new Angular project.<br/>• <code>ng serve</code> – Run development server with live reload.<br/>• <code>ng generate component/service/module</code> – Generate code scaffolds.<br/>• <code>ng build</code> – Build for production.<br/>• <code>ng test</code> – Run unit tests.<br/>• <code>ng lint</code> – Check code quality.<br/><br/><b>Benefits:</b><br/>(1) <b>Consistency:</b> Enforces best practices and coding standards.<br/>(2) <b>Productivity:</b> Generates boilerplate code automatically.<br/>(3) <b>Configuration:</b> Handles webpack, TypeScript, and build config.<br/>(4) <b>Updates:</b> <code>ng update</code> helps migrate to newer Angular versions.<br/>(5) <b>Testing:</b> Built-in support for Karma, Jasmine, Protractor.<br/><br/><b>Without CLI</b>, you'd manually configure webpack, TypeScript, testing frameworks – a complex and error-prone process."
+        },
+        {
+            "srNo": "9",
+            "Question": "Explain the importance of Component and Modules?",
+            "Answer": "<b>Components:</b><br/>• Building blocks of Angular UI.<br/>• Each component has: TypeScript class, HTML template, CSS styles.<br/>• Encapsulate logic and presentation.<br/>• Reusable and composable.<br/><br/><b>Example:</b><br/><code>@Component({<br/>  selector: 'app-header',<br/>  templateUrl: './header.component.html',<br/>  styleUrls: ['./header.component.css']<br/>})<br/>export class HeaderComponent { }</code><br/><br/><b>Modules (NgModules):</b><br/>• Containers that group related components, directives, pipes, and services.<br/>• Every Angular app has at least one module: <code>AppModule</code>.<br/>• Enable lazy loading and code organization.<br/><br/><b>Example:</b><br/><code>@NgModule({<br/>  declarations: [AppComponent, HeaderComponent],<br/>  imports: [BrowserModule, HttpClientModule],<br/>  providers: [UserService],<br/>  bootstrap: [AppComponent]<br/>})<br/>export class AppModule { }</code><br/><br/><b>Importance:</b><br/>• Components = UI pieces; Modules = organization and encapsulation.<br/>• Modules enable feature separation and lazy loading."
+        },
+        {
+            "srNo": "10",
+            "Question": "What is a decorator in Angular?",
+            "Answer": "<b>Decorators</b> are special functions that add metadata to classes, methods, or properties. They are prefixed with <code>@</code> symbol.<br/><br/><b>Common Angular Decorators:</b><br/><table border='1' cellpadding='5'><tr><th>Decorator</th><th>Purpose</th></tr><tr><td><code>@Component</code></td><td>Defines a component with template, styles, selector</td></tr><tr><td><code>@NgModule</code></td><td>Defines a module</td></tr><tr><td><code>@Injectable</code></td><td>Marks a class as available for dependency injection</td></tr><tr><td><code>@Directive</code></td><td>Defines a directive</td></tr><tr><td><code>@Pipe</code></td><td>Defines a pipe</td></tr><tr><td><code>@Input</code></td><td>Marks a property as input from parent</td></tr><tr><td><code>@Output</code></td><td>Marks a property as output event emitter</td></tr><tr><td><code>@HostListener</code></td><td>Listens to host element events</td></tr></table><br/><b>Example:</b><br/><code>@Component({<br/>  selector: 'app-user',<br/>  template: '&lt;h1&gt;{{name}}&lt;/h1&gt;'<br/>})<br/>export class UserComponent {<br/>  @Input() name: string;<br/>}</code>"
+        },
+        {
+            "srNo": "11",
+            "Question": "What are Annotations or Metadata?",
+            "Answer": "<b>Metadata</b> (also called Annotations) is the configuration information passed to decorators that tells Angular how to process a class.<br/><br/><b>Metadata in @Component:</b><br/><code>@Component({<br/>  selector: 'app-root',        // HTML tag name<br/>  templateUrl: './app.html',   // External template<br/>  template: '&lt;h1&gt;Hi&lt;/h1&gt;',      // Inline template<br/>  styleUrls: ['./app.css'],    // External styles<br/>  styles: ['h1 { color: red }'], // Inline styles<br/>  providers: [MyService]       // DI providers<br/>})</code><br/><br/><b>Metadata in @NgModule:</b><br/>• <code>declarations</code>: Components, directives, pipes belonging to this module.<br/>• <code>imports</code>: Other modules to import.<br/>• <code>exports</code>: What to expose to other modules.<br/>• <code>providers</code>: Services available for DI.<br/>• <code>bootstrap</code>: Root component to bootstrap.<br/><br/><b>Metadata</b> is how Angular understands and processes your application structure at compile time."
+        },
+        {
+            "srNo": "12",
+            "Question": "What is a template?",
+            "Answer": "<b>Template</b> is the HTML view of a component. It defines what gets rendered in the browser.<br/><br/><b>Two Ways to Define:</b><br/>(1) <b>External Template:</b><br/><code>@Component({<br/>  templateUrl: './user.component.html'<br/>})</code><br/><br/>(2) <b>Inline Template:</b><br/><code>@Component({<br/>  template: '&lt;h1&gt;Hello {{name}}&lt;/h1&gt;'<br/>})</code><br/><br/><b>Template Features:</b><br/>• <b>Interpolation:</b> <code>{{ expression }}</code><br/>• <b>Property Binding:</b> <code>[property]=\"value\"</code><br/>• <b>Event Binding:</b> <code>(event)=\"handler()\"</code><br/>• <b>Two-way Binding:</b> <code>[(ngModel)]=\"value\"</code><br/>• <b>Directives:</b> <code>*ngIf</code>, <code>*ngFor</code><br/>• <b>Template Reference Variables:</b> <code>#myInput</code><br/>• <b>Pipes:</b> <code>{{ date | date:'short' }}</code><br/><br/><b>Best Practice:</b> Use external templates for complex views; inline for simple, short templates."
+        },
+        {
+            "srNo": "13",
+            "Question": "Explain the four types of Data bindings in Angular?",
+            "Answer": "<b>1. Interpolation (One-way: Component → View)</b><br/>Display component data in the template.<br/><code>{{ title }}</code><br/><code>{{ user.name }}</code><br/><code>{{ 2 + 2 }}</code><br/><br/><b>2. Property Binding (One-way: Component → View)</b><br/>Bind component property to element property.<br/><code>&lt;img [src]=\"imageUrl\"&gt;</code><br/><code>&lt;button [disabled]=\"isDisabled\"&gt;</code><br/><code>&lt;div [ngClass]=\"cssClasses\"&gt;</code><br/><br/><b>3. Event Binding (One-way: View → Component)</b><br/>Respond to user events and call component methods.<br/><code>&lt;button (click)=\"onClick()\"&gt;</code><br/><code>&lt;input (keyup)=\"onKeyUp($event)\"&gt;</code><br/><code>&lt;form (submit)=\"onSubmit()\"&gt;</code><br/><br/><b>4. Two-way Binding (Both directions)</b><br/>Sync data between component and view (requires FormsModule).<br/><code>&lt;input [(ngModel)]=\"username\"&gt;</code><br/>Shorthand for: <code>[ngModel]=\"username\" (ngModelChange)=\"username=$event\"</code><br/><br/><b>Summary:</b><br/>• <code>{{ }}</code> – Interpolation<br/>• <code>[ ]</code> – Property binding<br/>• <code>( )</code> – Event binding<br/>• <code>[( )]</code> – Two-way binding (banana in a box)"
+        },
+        {
+            "srNo": "14",
+            "Question": "Explain architecture of Angular?",
+            "Answer": "<b>Angular Architecture consists of:</b><br/><br/><b>1. Modules (NgModules)</b><br/>• Containers for organizing related code.<br/>• Root module: <code>AppModule</code>; feature modules for lazy loading.<br/><br/><b>2. Components</b><br/>• Building blocks of UI.<br/>• Each has: class (logic), template (HTML), styles (CSS).<br/><br/><b>3. Templates</b><br/>• HTML with Angular syntax (bindings, directives).<br/><br/><b>4. Metadata (Decorators)</b><br/>• Configuration that tells Angular how to process classes.<br/><br/><b>5. Data Binding</b><br/>• Connects component data to template (interpolation, property, event, two-way).<br/><br/><b>6. Directives</b><br/>• Extend HTML behavior (structural: *ngIf, *ngFor; attribute: ngClass).<br/><br/><b>7. Services</b><br/>• Reusable business logic, data access, shared state.<br/>• Injected via Dependency Injection.<br/><br/><b>8. Dependency Injection (DI)</b><br/>• Framework for providing dependencies to components/services.<br/><br/><b>9. Routing</b><br/>• Maps URLs to components for SPA navigation.<br/><br/><b>Flow:</b><br/>User interacts → Event binding → Component updates → Change detection → View updates."
+        },
+        {
+            "srNo": "15",
+            "Question": "What is SPA in Angular?",
+            "Answer": "<b>SPA (Single Page Application)</b> is a web application that loads a single HTML page and dynamically updates content without full page reloads.<br/><br/><b>How SPA Works:</b><br/>• Initial load fetches HTML, CSS, JS bundle.<br/>• Subsequent navigation updates the DOM via JavaScript.<br/>• Uses client-side routing (Angular Router).<br/>• Server provides data via APIs (REST, GraphQL).<br/><br/><b>Benefits of SPA:</b><br/>(1) <b>Fast navigation:</b> No full page reloads; only data is fetched.<br/>(2) <b>Better UX:</b> Smooth, app-like experience.<br/>(3) <b>Reduced server load:</b> Server only serves APIs, not HTML.<br/>(4) <b>Offline capability:</b> Can work offline with service workers.<br/><br/><b>Drawbacks:</b><br/>• Initial load can be slow (large JS bundle).<br/>• SEO challenges (mitigated by SSR with Angular Universal).<br/>• Browser history management needed.<br/><br/><b>Angular is designed for SPAs</b> – it provides Router, HttpClient, and change detection to build seamless single-page experiences."
+        },
+        {
+            "srNo": "16",
+            "Question": "How to implement SPA in Angular?",
+            "Answer": "<b>Steps to Implement SPA in Angular:</b><br/><br/><b>1. Create Angular Project</b><br/><code>ng new my-spa-app --routing</code><br/>(The <code>--routing</code> flag adds RouterModule)<br/><br/><b>2. Define Routes</b><br/>In <code>app-routing.module.ts</code>:<br/><code>const routes: Routes = [<br/>  { path: '', component: HomeComponent },<br/>  { path: 'about', component: AboutComponent },<br/>  { path: 'contact', component: ContactComponent },<br/>  { path: '**', component: NotFoundComponent }<br/>];</code><br/><br/><b>3. Add Router Outlet</b><br/>In <code>app.component.html</code>:<br/><code>&lt;nav&gt;<br/>  &lt;a routerLink=\"/\"&gt;Home&lt;/a&gt;<br/>  &lt;a routerLink=\"/about\"&gt;About&lt;/a&gt;<br/>&lt;/nav&gt;<br/>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code><br/><br/><b>4. Navigate Programmatically</b><br/><code>constructor(private router: Router) {}<br/>goToAbout() {<br/>  this.router.navigate(['/about']);<br/>}</code><br/><br/><b>5. Lazy Load Feature Modules</b><br/><code>{ path: 'admin', loadChildren: () =><br/>  import('./admin/admin.module').then(m => m.AdminModule) }</code><br/><br/>The <code>&lt;router-outlet&gt;</code> is where Angular renders the routed component without reloading the page."
+        },
+        {
+            "srNo": "17",
+            "Question": "How to implement routing in Angular?",
+            "Answer": "<b>Step 1: Import RouterModule</b><br/>In <code>app.module.ts</code>:<br/><code>import { RouterModule, Routes } from '@angular/router';</code><br/><br/><b>Step 2: Define Routes</b><br/><code>const routes: Routes = [<br/>  { path: '', component: HomeComponent },<br/>  { path: 'products', component: ProductListComponent },<br/>  { path: 'products/:id', component: ProductDetailComponent },<br/>  { path: '**', redirectTo: '' }  // Wildcard route<br/>];<br/><br/>@NgModule({<br/>  imports: [RouterModule.forRoot(routes)],<br/>  exports: [RouterModule]<br/>})</code><br/><br/><b>Step 3: Add Router Outlet</b><br/><code>&lt;router-outlet&gt;&lt;/router-outlet&gt;</code><br/><br/><b>Step 4: Navigation Links</b><br/><code>&lt;a routerLink=\"/products\"&gt;Products&lt;/a&gt;<br/>&lt;a [routerLink]=\"['/products', product.id]\"&gt;Details&lt;/a&gt;</code><br/><br/><b>Step 5: Read Route Parameters</b><br/><code>constructor(private route: ActivatedRoute) {}<br/>ngOnInit() {<br/>  this.route.params.subscribe(params => {<br/>    this.productId = params['id'];<br/>  });<br/>}</code><br/><br/><b>Step 6: Programmatic Navigation</b><br/><code>this.router.navigate(['/products', id]);</code>"
+        },
+        {
+            "srNo": "18",
+            "Question": "What are the lifecycle hooks in Angular?",
+            "Answer": "Angular provides several lifecycle hooks that allow you to control the behavior of components:<ul><li>ngOnInit(): Called after the component is initialized.</li><li>ngOnChanges(): Called when any data-bound property changes.</li><li>ngOnDestroy(): Called just before the component is destroyed.</li><li>ngAfterViewInit(): Called after the component's view (and child views) are fully initialized.</li></ul> <br/> <img src='../images/angular/life-cycle.PNG'></li></ol>"
+        },
+        {
+            "srNo": "19",
+            "Question": "How to implement Lazy Loading in Angular?",
+            "Answer": "<b>Lazy Loading</b> loads feature modules on demand, reducing initial bundle size.<br/><br/><b>Step 1: Create Feature Module</b><br/><code>ng generate module admin --route admin --module app.module</code><br/><br/><b>Step 2: Configure Route with loadChildren</b><br/>In <code>app-routing.module.ts</code>:<br/><code>const routes: Routes = [<br/>  { path: '', component: HomeComponent },<br/>  {<br/>    path: 'admin',<br/>    loadChildren: () =><br/>      import('./admin/admin.module').then(m => m.AdminModule)<br/>  }<br/>];</code><br/><br/><b>Step 3: Feature Module Routing</b><br/>In <code>admin-routing.module.ts</code>:<br/><code>const routes: Routes = [<br/>  { path: '', component: AdminDashboardComponent },<br/>  { path: 'users', component: UserListComponent }<br/>];</code><br/><br/><b>How It Works:</b><br/>• Admin module JS is NOT included in main bundle.<br/>• When user navigates to <code>/admin</code>, Angular fetches the module.<br/>• Subsequent admin routes are fast (module is cached).<br/><br/><b>Benefits:</b> Faster initial load, better performance, code splitting."
+        },
+        {
+            "srNo": "20",
+            "Question": "Define Services in Angular?",
+            "Answer": "<b>Services</b> are classes that handle business logic, data access, and shared functionality across components.<br/><br/><b>Why Use Services?</b><br/>• <b>Separation of concerns:</b> Keep components focused on UI.<br/>• <b>Reusability:</b> Share logic across multiple components.<br/>• <b>Testability:</b> Easy to mock and unit test.<br/>• <b>State management:</b> Share data between components.<br/><br/><b>Creating a Service:</b><br/><code>ng generate service user</code><br/><br/><b>Example:</b><br/><code>@Injectable({<br/>  providedIn: 'root'  // Singleton, available app-wide<br/>})<br/>export class UserService {<br/>  private apiUrl = '/api/users';<br/><br/>  constructor(private http: HttpClient) {}<br/><br/>  getUsers(): Observable&lt;User[]&gt; {<br/>    return this.http.get&lt;User[]&gt;(this.apiUrl);<br/>  }<br/><br/>  getUser(id: number): Observable&lt;User&gt; {<br/>    return this.http.get&lt;User&gt;(`${this.apiUrl}/${id}`);<br/>  }<br/>}</code><br/><br/><b>Using in Component:</b><br/><code>constructor(private userService: UserService) {}<br/>ngOnInit() {<br/>  this.userService.getUsers().subscribe(users => this.users = users);<br/>}</code>"
+        },
+        {
+            "srNo": "21",
+            "Question": "What is Dependency Injection?",
+            "Answer": "<b>Dependency Injection (DI)</b> is a design pattern where dependencies are provided to a class rather than the class creating them itself.<br/><br/><b>Without DI:</b><br/><code>class UserComponent {<br/>  userService = new UserService(); // Tight coupling<br/>}</code><br/><br/><b>With DI:</b><br/><code>class UserComponent {<br/>  constructor(private userService: UserService) {} // Injected<br/>}</code><br/><br/><b>Angular's DI System:</b><br/>• <b>Injector:</b> Creates and manages service instances.<br/>• <b>Provider:</b> Tells the injector how to create a service.<br/>• <b>Token:</b> Lookup key for the dependency (usually the class type).<br/><br/><b>How It Works:</b><br/>(1) Service is decorated with <code>@Injectable()</code>.<br/>(2) Service is registered in a provider (root, module, or component).<br/>(3) Angular injector creates instance and injects into constructor.<br/>(4) Same instance is reused (singleton at that scope).<br/><br/><b>DI makes code:</b> loosely coupled, testable, maintainable, and flexible."
+        },
+        {
+            "srNo": "22",
+            "Question": "How to implement Dependency Injection?",
+            "Answer": "<b>Step 1: Create Service</b><br/><code>@Injectable({<br/>  providedIn: 'root'  // Register at root level<br/>})<br/>export class LoggerService {<br/>  log(message: string) {<br/>    console.log(message);<br/>  }<br/>}</code><br/><br/><b>Step 2: Inject in Component</b><br/><code>@Component({...})<br/>export class AppComponent {<br/>  constructor(private logger: LoggerService) {<br/>    this.logger.log('Component initialized');<br/>  }<br/>}</code><br/><br/><b>Provider Levels:</b><br/>(1) <b>Root (providedIn: 'root'):</b> Singleton across entire app.<br/>(2) <b>Module:</b> In <code>@NgModule({ providers: [MyService] })</code> – scoped to module.<br/>(3) <b>Component:</b> In <code>@Component({ providers: [MyService] })</code> – new instance per component.<br/><br/><b>Injecting Dependencies into Services:</b><br/><code>@Injectable({ providedIn: 'root' })<br/>export class UserService {<br/>  constructor(<br/>    private http: HttpClient,<br/>    private logger: LoggerService<br/>  ) {}<br/>}</code><br/><br/><b>Key:</b> Use constructor parameters with type annotations; Angular handles the rest."
+        },
+        {
+            "srNo": "23",
+            "Question": "What's the benefit of Dependency Injection?",
+            "Answer": "<b>Benefits of Dependency Injection:</b><br/><br/><b>1. Loose Coupling</b><br/>• Components don't create dependencies; they receive them.<br/>• Easy to swap implementations (e.g., mock service for testing).<br/><br/><b>2. Testability</b><br/>• Inject mock services in unit tests.<br/><code>TestBed.configureTestingModule({<br/>  providers: [{ provide: UserService, useClass: MockUserService }]<br/>});</code><br/><br/><b>3. Reusability</b><br/>• Services are shared across components.<br/>• Single source of truth for business logic.<br/><br/><b>4. Maintainability</b><br/>• Change service implementation without modifying components.<br/>• Clear dependency graph.<br/><br/><b>5. Singleton Management</b><br/>• Angular manages instance lifecycle.<br/>• Avoid duplicate instances and memory leaks.<br/><br/><b>6. Hierarchical Injection</b><br/>• Different scopes: root, module, component.<br/>• Override services at specific levels.<br/><br/><b>Example:</b> Swap <code>RealApiService</code> with <code>MockApiService</code> for testing – no code changes in components needed."
+        },
+        {
+            "srNo": "24",
+            "Question": "Differentiate between ng serve and ng build?",
+            "Answer": "<table border='1' cellpadding='8'><tr><th>Aspect</th><th>ng serve</th><th>ng build</th></tr><tr><td><b>Purpose</b></td><td>Development server with live reload</td><td>Build for deployment</td></tr><tr><td><b>Output</b></td><td>Serves from memory (no files written)</td><td>Writes files to <code>dist/</code> folder</td></tr><tr><td><b>Optimization</b></td><td>No minification, no tree-shaking</td><td>Optimized, minified (with --prod)</td></tr><tr><td><b>Source Maps</b></td><td>Full source maps for debugging</td><td>Minimal or none in production</td></tr><tr><td><b>Live Reload</b></td><td>Yes – auto-refreshes on code changes</td><td>No – static files output</td></tr><tr><td><b>Use Case</b></td><td>Local development and testing</td><td>Deploy to server (IIS, Nginx, Azure)</td></tr><tr><td><b>Speed</b></td><td>Fast incremental builds</td><td>Slower full build</td></tr></table><br/><br/><b>Commands:</b><br/>• <code>ng serve</code> – Start dev server at localhost:4200<br/>• <code>ng serve --port 5000</code> – Custom port<br/>• <code>ng build</code> – Development build<br/>• <code>ng build --configuration production</code> – Production build"
+        },
+        {
+            "srNo": "25",
+            "Question": "Explain the --prod parameter in ng build?",
+            "Answer": "<b>Note:</b> In Angular 12+, <code>--prod</code> is replaced by <code>--configuration production</code>.<br/><br/><b>Command:</b><br/><code>ng build --configuration production</code><br/>(or <code>ng build --prod</code> in older versions)<br/><br/><b>What Production Build Does:</b><br/><br/>(1) <b>Ahead-of-Time (AOT) Compilation:</b><br/>• Templates compiled at build time, not runtime.<br/>• Faster rendering, smaller bundle (no compiler shipped).<br/><br/>(2) <b>Tree Shaking:</b><br/>• Removes unused code from final bundle.<br/><br/>(3) <b>Minification:</b><br/>• Removes whitespace, shortens variable names.<br/>• Significantly reduces file size.<br/><br/>(4) <b>Bundling:</b><br/>• Combines files into fewer, optimized chunks.<br/><br/>(5) <b>Source Maps:</b><br/>• Disabled or hidden (for security).<br/><br/>(6) <b>Environment:</b><br/>• Uses <code>environment.prod.ts</code> instead of <code>environment.ts</code>.<br/><br/><b>Result:</b> Smaller, faster, production-ready bundle in <code>dist/</code> folder ready for deployment.<br/><br/><b>Typical size reduction:</b> 3-5x smaller than development build."
+        },
+        {
+            "srNo": "26",
+            "Question": "What is a resolver in Angular, and why is it used?",
+            "Answer": "A resolver is essentially a service that implements the Resolve<T> interface. The resolver service is attached to a route definition. When Angular's router attempts to activate a route, it first executes the resolver, which can fetch or compute the required data. The route is only activated after the data is successfully fetched or computed.Why Use a Resolver? <ol><li>Ensure Data is Ready Before the Component Loads</li><li>Avoid Manual Data Fetching in Components</li><li>Simplified Error Handling</li><li>Centralized Data Loading</li></ol> <img src='../images/angular/resolver.PNG'>"
+        },
+        {
+            "srNo": "27",
+            "Question": "What are template reference variables? How are they used?",
+            "Answer": "A Template Reference Variable is a way to get direct access to an element, component, or directive in the template. It is declared using the # symbol inside the template and allows you to reference that element within the same template. <img src='../images/angular/6.1.PNG'><br/><br/><img src='../images/angular/6.2.PNG'><br/><br/><img src='../images/angular/6.3.PNG'>"
+        },
+        {
+            "srNo": "28",
+            "Question": "What's the difference between Template-Driven and Reactive Forms?",
+            "Answer": "Template-Driven Forms and Reactive Forms are two different approaches to handling forms in Angular, each with its own strengths and use cases <br/><br/> <img src='../images/angular/7.1.PNG'> <br/><br/> <img src='../images/angular/7.2.PNG'> <br/><br/> <img src='../images/angular/7.3.PNG'>"
+        },
+        {
+            "srNo": "29",
+            "Question": "What are route guards, and name a few types?",
+            "Answer": "Route Guards in Angular are interfaces that control navigation to and from a route. They help in securing routes, managing permissions, and preventing unauthorized access to certain pages. <br/><br/> These guards return true (allow navigation) or false (block navigation), and can also return an Observable or Promise for asynchronous checks. <br/><br/> <img src='../images/angular/8.1.PNG'> <br/><br/> <img src='../images/angular/8.2.PNG'>"
+        },
+        {
+            "srNo": "30",
+            "Question": "What is FormBuilder, and why use it?",
+            "Answer": "FormBuilder is a service in Angular that simplifies the creation and management of Reactive Forms. It reduces boilerplate code by providing an easy way to create FormGroup and FormControl instances."
+        },
+        {
+            "srNo": "31",
+            "Question": "What is an Observable, and how is it used in Angular?",
+            "Answer": "An Observable is a core concept in RxJS (Reactive Extensions for JavaScript), which Angular uses for handling asynchronous operations. It represents a stream of data that can emit values over time, making it useful for handling events, HTTP requests, and real-time updates. <br/><br/> <img src='../images/angular/10.1.PNG'>"
+        },
+        {
+            "srNo": "32",
+            "Question": "What is a Polyfill in Angular?",
+            "Answer": "A polyfill is a script that provides modern JavaScript features in older browsers that do not support them natively. In Angular, polyfills ensure that the application runs smoothly across different browsers, including legacy ones like Internet Explorer 11. <br/><br/> <img src='../images/angular/11.1.PNG'>"
+        },
+        {
+            "srNo": "33",
+            "Question": "What are Angular Pipes? Can you create a custom pipe?",
+            "Answer": "In Angular, a Pipe is a feature that transforms data before displaying it in a template. Pipes are used to format, filter, or manipulate values in a declarative way. <br/><br/> <img src='../images/angular/12.2.PNG'><br/><br/><img src='../images/angular/12.1.PNG'><br/><br/>"
+        }
+    ]
 }
