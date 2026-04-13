@@ -33,5 +33,41 @@
         "srNo": "7",
         "Question": "Layered vs Tiered Architecture",
         "Answer": "<b>Layer</b> = Logical separation of code (within the same application).<br/><b>Tier</b> = Physical separation of components (on different servers/machines).<br/><br/><table border='1' cellpadding='8'><tr><th>Aspect</th><th>Layered (Logical)</th><th>Tiered (Physical)</th></tr><tr><td><b>Definition</b></td><td>Separation of concerns within code</td><td>Separation of components across machines</td></tr><tr><td><b>Deployment</b></td><td>All layers deploy together as one unit</td><td>Each tier can be deployed on separate servers</td></tr><tr><td><b>Communication</b></td><td>In-process method calls</td><td>Network calls (HTTP, TCP, gRPC)</td></tr><tr><td><b>Scaling</b></td><td>Scale entire application</td><td>Scale each tier independently</td></tr><tr><td><b>Performance</b></td><td>Faster (no network overhead)</td><td>Network latency between tiers</td></tr><tr><td><b>Example</b></td><td>UI Layer, Business Layer, Data Layer in one project</td><td>Web Server, App Server, Database Server</td></tr></table><br/><br/><b>Common Layers (Logical):</b><ul><li><b>Presentation Layer:</b> UI, Controllers, Views</li><li><b>Business Logic Layer:</b> Services, Domain Logic</li><li><b>Data Access Layer:</b> Repositories, EF Core, Dapper</li></ul><br/><b>Common Tiers (Physical):</b><ul><li><b>1-Tier:</b> All on one machine (desktop app)</li><li><b>2-Tier:</b> Client + Database Server</li><li><b>3-Tier:</b> Client + App Server + Database Server</li><li><b>N-Tier:</b> Multiple app servers, load balancers, caches</li></ul><br/><b>Key Point:</b> An application can have 3 layers but run on 1 tier (single server), or have 3 layers deployed across 3 tiers (separate servers). Layers are about code organization; tiers are about deployment topology."
+    },
+    {
+        "srNo": "8",
+        "Question": "What is the difference between a factory and a builder pattern?",
+        "Answer": "The Factory pattern is used to create objects without specifying the exact class of object that will be created. It provides an interface for creating instances of a class. The Builder pattern is used to construct complex objects step by step. It allows you to create different representations of the same object."
+    },
+    {
+        "srNo": "9",
+        "Question": "What is the Repository pattern?",
+        "Answer": "The Repository pattern is a design pattern that provides a way to manage data access and storage in an application. It acts as a mediator between the domain and data mapping layers, allowing for separation of concerns and easier testing. The Repository pattern abstracts the data layer, providing a collection-like interface for accessing domain objects."
+    },
+    {
+        "srNo": "10",
+        "Question": "What is difference between Unit Test and Integration Test?",
+        "Answer": "<p>Unit Test<br/><li>Tests a single unit like a method or class in isolation</li><br/><li>Uses mocked dependencies</li><br/><li>Very fast execution</li><br/><li>Focuses on logic correctness</li><br/><li>Example: testing Add(a,b) method</li><br/>Integration Test<br/><li>Tests multiple components working together</li><br/><li>Uses real or semi-real dependencies (DB, API, services)</li><br/><li>Slower execution</li><br/><li>Focuses on interaction between components</li><br/><li>Example: testing API → Service → Database flow</li><br/>Key Difference<br/><li>Unit Test = tests individual piece</li><br/><li>Integration Test = tests combined system behavior</li></p>"
+    },
+    {
+        "srNo": "11",
+        "Question": "What is Dependency Injection and how does it work in C#?",
+        "Answer": "Dependency Injection is a design pattern used to achieve loose coupling between classes. Instead of creating dependencies inside a class using new, we inject them from outside, usually through constructor injection. In ASP.NET Core, DI is built in, and services are registered in the container with transient, scoped, or singleton lifetimes. It improves testability, maintainability, and flexibility."
+    },
+    {
+        "srNo": "12",
+        "Question": "Whate are the types of Dependency Injection?",
+        "Answer": "<p>1. Constructor Injection<br/><li>Dependencies are provided through a class constructor</li><br/>2. Property Injection<br/><li>Dependencies are set through public properties after object creation</li><br/>3. Method Injection<br/><li>Dependencies are passed as parameters to methods when needed</li><br/>4. Interface Injection<br/><li>Class implements an interface that defines a method for injecting dependencies</li><br/>5. Service Locator (not recommended)<br/><li>Class retrieves dependencies from a service locator or container</li></p>"
+    },
+    {
+        "srNo": "13",
+        "Question": "What is the difference between a Singleton and a Static class in C#?",
+        "Answer": "<p>Singleton<br/><li>Ensures only one instance of a class exists</li><br/><li>Instance can implement interfaces and be passed around</li><br/><li>Can have state and be garbage collected</li><br/><li>Example: Logger class with instance methods</li><br/>Static Class<br/><li>Cannot be instantiated; all members are static</li><br/><li>Cannot implement interfaces or be passed as an object</li><br/><li>State is shared across all calls and cannot be garbage collected</li><br/><li>Example: Math class with static methods like Math.Sqrt()</li></p>"
+    },
+    {
+        "srNo": "14",
+        "Question": "What is the Strategy Pattern?",
+        "Answer": "Strategy Pattern is a behavioral design pattern that allows us to define multiple algorithms or behaviors in separate classes and choose one at runtime through a common interface. It helps remove large conditional logic and makes code more extensible and testable. <br/><br/> Strategy Pattern is used when we have multiple ways to perform the same action, such as different payment methods or discount calculations. We define a common interface and create separate classes for each behavior. At runtime, we select the required strategy. This avoids large if-else blocks, improves maintainability, and works very well with dependency injection in ASP.NET Core. <br/><br/> <li>Strategy Pattern is for multiple interchangeable behaviors, uses interface + multiple implementations, removes if-else or switch complexity, supports Open/Closed Principle, and works very well with DI</li>"    
     }
+
 ]}

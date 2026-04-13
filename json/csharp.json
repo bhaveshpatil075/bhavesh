@@ -161,7 +161,7 @@
     {
         "srNo": "33",
         "Question": "What is Task and how it is different from Thread?",
-        "answer": "A Task is a lightweight object that represents an asynchronous operation. It is a wrapper around a thread that provides a way to manage asynchronous operations. <br/><br/> A Thread is a low-level object that represents a thread of execution. It is a wrapper around a thread that provides a way to manage threads."
+        "Answer": "A Task is a lightweight object that represents an asynchronous operation. It is a wrapper around a thread that provides a way to manage asynchronous operations. <br/><br/> A Thread is a low-level object that represents a thread of execution. It is a wrapper around a thread that provides a way to manage threads."            
     }
 ]
 }

@@ -88,6 +88,30 @@
         "srNo": "18",
         "Question": "How did you implement Rate Limiter?",
         "Answer": "<b>Rate Limiting in .NET 7+</b> is built-in via <code>Microsoft.AspNetCore.RateLimiting</code> middleware.<br/><br/><b>Step 1: Add Rate Limiting Services</b><br/><code>builder.Services.AddRateLimiter(options =><br/>{<br/>    options.GlobalLimiter = PartitionedRateLimiter.Create&lt;HttpContext, string&gt;(context =><br/>        RateLimitPartition.GetFixedWindowLimiter(<br/>            partitionKey: context.User.Identity?.Name ?? context.Request.Headers.Host.ToString(),<br/>            factory: _ => new FixedWindowRateLimiterOptions<br/>            {<br/>                AutoReplenishment = true,<br/>                PermitLimit = 100,<br/>                Window = TimeSpan.FromMinutes(1)<br/>            }));<br/>    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;<br/>});</code><br/><br/><b>Step 2: Use Middleware</b><br/><code>app.UseRateLimiter();</code><br/><br/><b>Rate Limiter Algorithms:</b><br/><ul><li><b>Fixed Window:</b> X requests per time window (e.g., 100 req/min)</li><li><b>Sliding Window:</b> Smooths out burst traffic across segments</li><li><b>Token Bucket:</b> Tokens replenish at fixed rate; allows bursts</li><li><b>Concurrency:</b> Limits concurrent requests (not rate)</li></ul><br/><b>Named Policies:</b><br/><code>options.AddFixedWindowLimiter(\"Api\", opt => {<br/>    opt.PermitLimit = 10;<br/>    opt.Window = TimeSpan.FromSeconds(10);<br/>});<br/><br/>[EnableRateLimiting(\"Api\")]<br/>public class MyController : ControllerBase { }</code><br/><br/><b>Per-Client Limiting:</b> Partition by IP, user ID, or API key using <code>partitionKey</code>.<br/><br/><b>For .NET 6 and earlier:</b> Use <code>AspNetCoreRateLimit</code> NuGet package."
+    },
+    {
+        "srNo": "19",
+        "Question": "What is Razor in ASP.NET Core?",
+        "Answer": "Razor is a templating engine for ASP.NET Core that allows you to write HTML markup with embedded C# code. It is a lightweight, fast, and efficient way to generate HTML content dynamically. <br/><br/> <img src='../images/core/19.1.PNG'> <br/><br/> <img src='../images/core/19.2.PNG'> <br/><br/> <img src='../images/core/19.3.PNG'>"
+    },
+    {
+        "srNo": "20",
+        "Question": "What is TempData in ASP.NET Core?",
+        "Answer": "TempData is a dictionary that allows you to store data for the next request. It is a lightweight, fast, and efficient way to store data for the next request. <br/><br/> <img src='../images/core/20.0.PNG'> <br/><br/> <img src='../images/core/20.2.PNG'> "
+    },
+    {
+        "srNo": "21",
+        "Question": "What is difference beetween app.use(), app.map() & app.run() in ASP.NET Core?",
+        "Answer": "app.use() is used to add middleware to the request pipeline. <br/><br/> app.map() is used to map a middleware to a specific URL. <br/><br/> app.run() is used to run a middleware at the end of the request pipeline. <br/><br/> <img src='../images/core/21.0.PNG'>  "
+    },
+    {
+        "srNo": "22",
+        "Question": "What is the difference between app.useEndpoints() & app.mapControllers() in ASP.NET Core?",
+        "Answer": "app.useEndpoints() is used to configure the endpoints for the application. <br/><br/> app.mapControllers() is used to map controller actions to endpoints. <br/><br/> <img src='../images/core/22.0.PNG'> "
+    },
+    {
+        "srNo": "23",
+        "Question": "C# API lifecycle in ASP.NET Core",
+        "Answer": "<p>1. Kestrel Web Server Receives the Request<br/><li>ASP.NET Core apps run on Kestrel which listens for HTTP requests</li><br/>2. Middleware Pipeline Starts<br/><li>Request passes through middleware like logging, exception handling, authentication, authorization</li><br/>3. Routing Middleware<br/><li>Maps URL to controller action (e.g. GET /api/users/5 → UsersController.GetUser)</li><br/>4. Authentication & Authorization<br/><li>Validates user identity and permissions (401/403 if failed)</li><br/>5. Model Binding<br/><li>Converts request data into C# objects</li><br/>6. Model Validation<br/><li>Validates input using attributes like [Required]</li><br/>7. Controller Action Executes<br/><li>Business logic runs inside controller</li><br/>8. Service Layer / Database Calls<br/><li>Handles business logic and DB operations</li><br/>9. Action Result Returned<br/><li>Returns responses like Ok(), BadRequest()</li><br/>10. Response Through Middleware<br/><li>Response goes back through middleware</li><br/>11. HTTP Response Sent to Client<br/><li>Final response is sent back to client</li><br/>Summary Flow<br/><li>Client → Kestrel → Middleware → Routing → Auth → Model Binding → Validation → Controller → Service/DB → Response → Middleware → Client</li></p>"
     }
-]
-}
+]}

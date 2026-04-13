@@ -47,6 +47,11 @@
         "srNo": "10",
         "Question": "Explain the difference between call(), apply(), and bind(). Provide use cases.",
         "Answer": "The call(), apply(), and bind() methods in JavaScript are used to explicitly set the value of this and invoke or bind functions in different ways. <ol><li>call(): Calls a function immediately with a specified this value and arguments provided individually. <br/> Syntax: function.call(thisArg, arg1, arg2, ...) <br/> <img src='../images/javascript/10.1.PNG'> <br/><br/>  </li><li>apply(): Calls a function immediately with a specified this value and arguments provided as an array. <br/> Syntax: function.apply(thisArg, [argsArray]) <img src='../images/javascript/10.2.PNG'> <br/><br/> </li><li>bind(): Creates a new function with a specified this value and optional preset arguments. The function is not invoked immediately. <img src='../images/javascript/10.3.PNG'> <br/><br/> </li></ol> <img src='../images/javascript/10.4.PNG'>"
+    },
+    {
+        "srNo": "11",   
+        "Question": " JavaScript Array Methods",
+         "Answer": "<ul><li>filter() – returns a new array with elements that match a condition</li><li>map() – transforms each element into something new</li><li>find() – gives the first matching element</li><li>findIndex() – returns index of the first match</li><li>fill() – replaces elements with a fixed value (modifies array)</li><li>every() – checks if all elements satisfy a condition</li><li>some() – checks if at least one element satisfies a condition</li><li>concat() – merges arrays into a new array</li><li>includes() – checks if a value exists in the array</li><li>push() – adds elements to the end (modifies array)</li><li>pop() – removes last element (modifies array)</li></ul>"
     }
 
 ]
