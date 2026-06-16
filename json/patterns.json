@@ -68,6 +68,31 @@
         "srNo": "14",
         "Question": "What is the Strategy Pattern?",
         "Answer": "Strategy Pattern is a behavioral design pattern that allows us to define multiple algorithms or behaviors in separate classes and choose one at runtime through a common interface. It helps remove large conditional logic and makes code more extensible and testable. <br/><br/> Strategy Pattern is used when we have multiple ways to perform the same action, such as different payment methods or discount calculations. We define a common interface and create separate classes for each behavior. At runtime, we select the required strategy. This avoids large if-else blocks, improves maintainability, and works very well with dependency injection in ASP.NET Core. <br/><br/> <li>Strategy Pattern is for multiple interchangeable behaviors, uses interface + multiple implementations, removes if-else or switch complexity, supports Open/Closed Principle, and works very well with DI</li>"    
-    }
+    },
+    {
+        "srNo": "15",
+        "Question": "What is the Observer Pattern?",
+        "Answer": "The Observer Pattern is a behavioral design pattern that defines a one-to-many relationship between objects. When one object (the subject) changes its state, all its dependents (observers) are notified and updated automatically. This pattern promotes loose coupling and allows for dynamic relationships between objects. It is commonly used in event handling systems, such as GUI frameworks or real-time data updates."
+    },     
+    {
+        "srNo": "16",
+        "Question": "What is the difference between the Observer Pattern and the Publish-Subscribe Pattern?",
+        "Answer": "<p>Observer Pattern<br/><li>One-to-many relationship between subject and observers</li><br/><li>Observers are directly attached to the subject</li><br/><li>Subject notifies observers of state changes</li><br/><li>Example: GUI event handling (button click)</li><br/>Publish-Subscribe Pattern<br/><li>Decouples publishers and subscribers through a message broker</li><br/><li>Publishers send messages to a broker, which distributes them to subscribers</li><br/><li>Supports many-to-many relationships</li><br/><li>Example: Event bus or message queue system (RabbitMQ, Kafka)</li></p>"
+     },
+    {
+        "srNo": "17",
+        "Question": "What is the Decorator Pattern?",
+        "Answer": "The Decorator Pattern is a structural design pattern that allows behavior to be added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. It involves a set of decorator classes that are used to wrap concrete components. This pattern is useful for adhering to the Open/Closed Principle, as it allows for extending functionality without modifying existing code."
+     },
+     {
+        "srNo": "18",
+        "Question": "What is the difference between the Decorator Pattern and the Adapter Pattern?",
+        "Answer": "<p>Decorator Pattern<br/><li>Used to add new behavior to an object dynamically</li><br/><li>Wraps an object to enhance its functionality</li><br/><li>Maintains the same interface as the original object</li><br/><li>Example: Adding logging or caching to a service</li><br/>Adapter Pattern<br/><li>Used to allow incompatible interfaces to work together</li><br/><li>Converts one interface into another expected by clients</li><br/><li>Acts as a bridge between two incompatible interfaces</li><br/><li>Example: Adapting a legacy API to a new interface</li></p>"
+     },    
+     {
+        "srNo": "19",
+        "Question": "What is the Adapter Pattern?",
+        "Answer": "The Adapter Pattern is a structural design pattern that allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces by converting the interface of one class into another interface that clients expect. This pattern is useful when you want to use an existing class but its interface does not match the one you need."
+     }
 
 ]}
